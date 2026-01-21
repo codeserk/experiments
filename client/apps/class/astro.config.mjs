@@ -6,7 +6,7 @@ import preact from '@astrojs/preact';
 // https://astro.build/config
 export default defineConfig({
   prefetch: true,
-  site: 'https://experiments.codeserk.es/class',
+  site: 'https://codeserk.github.io/experiments/class/',
   base: '/class',
   integrations: [preact()],
   vite: {
