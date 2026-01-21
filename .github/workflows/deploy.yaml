@@ -22,18 +22,23 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Install dependencies
-        run: npm ci
-        working-directory: ./client/apps/class/
+      - name: Init dist
+        run: |
+          rm -rf dist
+          mkdir dist
+          echo "Hello" > index.html
 
-      - name: Build with Astro
-        run: npm run build
+      - name: Build class
         working-directory: ./client/apps/class/
+        run: |
+          npm ci
+          npm run build
+          cp dist ../../../dist/class
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./client/apps/class/dist
+          path: ./dist
 
   deploy:
     needs: build
