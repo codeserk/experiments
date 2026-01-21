@@ -1,0 +1,27 @@
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: #e0e0e0;
+  border-bottom: 6px solid #000;
+  z-index: 100;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transform: translate3d(0, -120%, 0);
+}
+
+.progress-bar-active {
+  transform: translate3d(0, -30px, 0);
+}
+
+.progress-bar-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: #4a90e2;
+  border-right: 8px solid #000;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}

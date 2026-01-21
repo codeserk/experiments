@@ -1,0 +1,100 @@
+---
+import Shapes from './Shapes.astro'
+import '../assets/styles/base.css'
+import '../assets/styles/questionnaire.css'
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700;900&display=swap" rel="stylesheet" />
+    <title>Social Class</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  </head>
+  <body>
+    <Shapes />
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  *::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    border-radius: 0;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 0;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #08080eff;
+    border-radius: 0;
+  }
+
+  body {
+    --font-title: 'Archivo Black', monospace;
+    --font-body: 'Rubik', sans-serif;
+    --color-yellow: #d99000;
+    --color-orange: #ff9966;
+    --color-pink: #ff6b9d;
+    --color-blue: #4a90e2;
+    --color-purple: #7b2cbf;
+    --color-red: #e74c3c;
+    --color-dark-red: #c0392b;
+    --color-green: #27ae60;
+
+    font-family: var(--font-body);
+    background: #fdca55;
+    background: linear-gradient(130deg, #ffeb3b 0%, #ffeb3b 20%, #ff6b9d 86%, #ffeb3b 100%);
+    background-attachment: fixed;
+    color: #000;
+  }
+
+  strong {
+    color: var(--color-dark-red);
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.9);
+    font-weight: 900;
+  }
+  em {
+    color: var(--color-purple);
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.9);
+  }
+
+  .color-yellow {
+    color: var(--color-yellow);
+  }
+  .color-orange {
+    color: var(--color-orange);
+    text-shadow: 0px 0px 5px rgba(10, 10, 10, 0.9);
+  }
+  .color-pink {
+    color: var(--color-pink);
+  }
+  .color-blue {
+    color: var(--color-blue);
+  }
+  .color-purple {
+    color: var(--color-purple);
+  }
+  .color-red {
+    color: var(--color-red);
+  }
+  .color-green {
+    color: var(--color-green);
+  }
+</style>
