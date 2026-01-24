@@ -194,10 +194,10 @@ export function calculateLivingQuality(countryCode: string, answers: Questionnai
   if (savingsRate < 1) {
     return LivingQuality.GettingBy
   }
-  if (savingsRate < 2) {
+  if (savingsRate < 4) {
     return LivingQuality.Comfortable
   }
-  if (savingsRate < 4) {
+  if (savingsRate < 10) {
     return LivingQuality.Prosperous
   }
 
@@ -215,7 +215,13 @@ export function calculateRiskOfLosingJob(answers: QuestionnaireAnswers): number 
 }
 
 export function calculateIsParasite(answers: QuestionnaireAnswers): boolean {
-  return answers.investments.includes(InvestmentArea.RealEstate)
+  if (!answers.investments.includes(InvestmentArea.RealEstate)) {
+    return false
+  }
+
+  const passiveIncome = getPassiveIncomeValue(answers.passiveIncome)
+
+  return passiveIncome > 2_500
 }
 
 export function calculateQuestionnaireResult(

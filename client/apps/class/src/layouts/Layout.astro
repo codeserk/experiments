@@ -8,7 +8,7 @@ import '../assets/styles/questionnaire.css'
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/class/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -57,12 +57,28 @@ import '../assets/styles/questionnaire.css'
     --color-red: #e74c3c;
     --color-dark-red: #c0392b;
     --color-green: #27ae60;
+    --block-width: 600px;
+    --title-size: 5em;
+    --subtitle-size: 3em;
+    --subtitle-2-size: 2em;
 
     font-family: var(--font-body);
+    font-size: 10px;
     background: #fdca55;
     background: linear-gradient(130deg, #ffeb3b 0%, #ffeb3b 20%, #ff6b9d 86%, #ffeb3b 100%);
     background-attachment: fixed;
     color: #000;
+
+    @media (min-width: 400px) {
+      font-size: 14px;
+    }
+    @media (min-width: 800px) {
+      font-size: 16px;
+    }
+    @media (min-width: 1200px) {
+      font-size: 18px;
+      --block-width: 750px;
+    }
   }
 
   strong {

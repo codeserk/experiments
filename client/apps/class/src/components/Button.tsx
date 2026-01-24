@@ -1,11 +1,14 @@
-import { useComputed } from '@preact/signals'
+import { useComputed, type ReadonlySignal } from '@preact/signals'
 import { useRef, type FC, type PropsWithChildren } from 'preact/compat'
 import { classes } from '../util/style'
 
 interface Props extends PropsWithChildren {
   readonly id?: string
   readonly className?: string
+  readonly color?: ReadonlySignal<string | undefined>
+  readonly active?: boolean
   readonly size?: 'big' | 'small'
+  readonly rounded?: boolean
   readonly confetti?:
     | {
         readonly colors?: string[]
@@ -21,7 +24,18 @@ const CONFETTI_DEFAULT_COLORS = ['#ff6b9d', '#ffeb3b', '#4ecdc4', '#4a90e2', '#9
 const CONFETTI_DEFAULT_QUANTITY = 20
 const CONFETTI_SHAPES = ['star', 'square', 'circle', 'triangle']
 
-export const Button: FC<Props> = ({ id, className, size, confetti, disabled, onClick, children }) => {
+export const Button: FC<Props> = ({
+  id,
+  className,
+  color,
+  active,
+  size,
+  rounded,
+  confetti,
+  disabled,
+  onClick,
+  children,
+}) => {
   const buttonRef = useRef<HTMLButtonElement>(null)
 
   const confettiColors = useComputed(() =>
@@ -71,7 +85,14 @@ export const Button: FC<Props> = ({ id, className, size, confetti, disabled, onC
     <button
       ref={buttonRef}
       id={id}
-      className={classes({ confetti: !!confetti }, `button size-${size ?? ''} ${className ?? ''}`)}
+      className={classes(
+        { rounded: !!rounded, confetti: !!confetti, active: !!active },
+        `button size-${size ?? ''} ${className ?? ''}`,
+      )}
+      style={{
+        background: color?.value ? color.value : undefined,
+        color: color?.value ? 'white' : undefined,
+      }}
       disabled={disabled}
       onClick={localOnClick}>
       {children}

@@ -69,13 +69,13 @@ export const enTranslations = {
         subtitle: 'Select the option that best describes you',
         values: {
           [Ethnicity.Asian]: 'Asian',
-          [Ethnicity.BlackAfrican]: 'Black/African',
-          [Ethnicity.HispanicLatinx]: 'Hispanic/Latinx',
-          [Ethnicity.IndigenousNative]: 'Indigenous/Native',
-          [Ethnicity.MiddleEasternNorthAfrican]: 'Middle Eastern/North African',
+          [Ethnicity.BlackAfrican]: 'Black / African',
+          [Ethnicity.HispanicLatinx]: 'Hispanic / Latinx',
+          [Ethnicity.IndigenousNative]: 'Indigenous / Native',
+          [Ethnicity.MiddleEasternNorthAfrican]: 'Middle Eastern / North African',
           [Ethnicity.PacificIslander]: 'Pacific Islander',
-          [Ethnicity.WhiteCaucasian]: 'White/Caucasian',
-          [Ethnicity.MixedMultiracial]: 'Mixed/Multiracial',
+          [Ethnicity.WhiteCaucasian]: 'White / Caucasian',
+          [Ethnicity.MixedMultiracial]: 'Mixed / Multiracial',
           [Ethnicity.Other]: 'Other',
         },
       },
@@ -323,6 +323,13 @@ export const enTranslations = {
       },
     },
 
+    buttons: {
+      prev: 'Prev',
+      next: 'Next',
+      skip: 'Skip',
+      finish: 'Finish',
+    },
+
     review: {
       title: 'Ready to See Your Results?',
       subtitle: 'We have everything we need to determine your social class.',
@@ -452,7 +459,18 @@ export const enTranslations = {
       worker: {
         title: "You're <blue>not so different</blue> after all",
         subtitle:
-          'Despite all your differences with the rest, you share one fundamental truth with <em>99% of humanity</em>.<br/><strong>You must work to survive.</strong>',
+          'Despite all your differences with the rest, you share one fundamental truth with <em>99% of humanity</em>.<br/><strong>You must work to survive.</strong><br/><em>Unite with those who share this reality. Together, we have the power to demand better.</em>',
+      },
+      scrollForMore: 'Scroll for more...',
+      summary: {
+        title: '',
+
+        rate: {
+          title: 'Do you agree with the results?',
+          like: 'Yes',
+          dislike: 'No',
+        },
+        share: 'Share',
       },
     },
   },

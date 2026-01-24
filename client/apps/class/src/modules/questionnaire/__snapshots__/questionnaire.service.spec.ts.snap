@@ -124,7 +124,7 @@ exports[`questionnaire service calculateLivingQuality [ES] Passive income (1000-
 
 exports[`questionnaire service calculateLivingQuality [ES] Passive income (1000-2500) - with debt no-debt - with expensive house 1`] = `"survival"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (1000-2500) - with debt no-debt - with none house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (1000-2500) - with debt no-debt - with none house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Passive income (1000-2500) - with debt no-debt - with normal house 1`] = `"getting-by"`;
 
@@ -140,33 +140,33 @@ exports[`questionnaire service calculateLivingQuality [ES] Passive income (1000-
 
 exports[`questionnaire service calculateLivingQuality [ES] Passive income (1000-2500) - with debt under-5000 - with very-expensive house 1`] = `"impossible"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt 5000-10000 - with cheap house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt 5000-10000 - with cheap house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt 5000-10000 - with expensive house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt 5000-10000 - with expensive house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt 5000-10000 - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt 5000-10000 - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt 5000-10000 - with normal house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt 5000-10000 - with normal house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt 5000-10000 - with very-expensive house 1`] = `"survival"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt 10000-25000 - with cheap house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt 10000-25000 - with cheap house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt 10000-25000 - with expensive house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt 10000-25000 - with expensive house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt 10000-25000 - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt 10000-25000 - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt 10000-25000 - with normal house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt 10000-25000 - with normal house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt 10000-25000 - with very-expensive house 1`] = `"survival"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt 25000-50000 - with cheap house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt 25000-50000 - with cheap house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt 25000-50000 - with expensive house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt 25000-50000 - with expensive house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt 25000-50000 - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt 25000-50000 - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt 25000-50000 - with normal house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt 25000-50000 - with normal house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt 25000-50000 - with very-expensive house 1`] = `"survival"`;
 
@@ -174,7 +174,7 @@ exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-
 
 exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt 50000-100000 - with expensive house 1`] = `"live-for-debts"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt 50000-100000 - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt 50000-100000 - with none house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt 50000-100000 - with normal house 1`] = `"live-for-debts"`;
 
@@ -190,95 +190,95 @@ exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-
 
 exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt 100000-plus - with very-expensive house 1`] = `"survival"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt no-debt - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt no-debt - with cheap house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt no-debt - with expensive house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt no-debt - with expensive house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt no-debt - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt no-debt - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt no-debt - with normal house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt no-debt - with normal house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt no-debt - with very-expensive house 1`] = `"survival"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt under-5000 - with cheap house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt under-5000 - with cheap house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt under-5000 - with expensive house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt under-5000 - with expensive house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt under-5000 - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt under-5000 - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt under-5000 - with normal house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt under-5000 - with normal house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Passive income (2500-5000) - with debt under-5000 - with very-expensive house 1`] = `"survival"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 5000-10000 - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 5000-10000 - with cheap house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 5000-10000 - with expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 5000-10000 - with expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 5000-10000 - with none house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 5000-10000 - with normal house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 5000-10000 - with normal house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 5000-10000 - with very-expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 5000-10000 - with very-expensive house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 10000-25000 - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 10000-25000 - with cheap house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 10000-25000 - with expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 10000-25000 - with expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 10000-25000 - with none house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 10000-25000 - with normal house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 10000-25000 - with normal house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 10000-25000 - with very-expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 10000-25000 - with very-expensive house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 25000-50000 - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 25000-50000 - with cheap house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 25000-50000 - with expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 25000-50000 - with expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 25000-50000 - with none house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 25000-50000 - with normal house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 25000-50000 - with normal house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 25000-50000 - with very-expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 25000-50000 - with very-expensive house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 50000-100000 - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 50000-100000 - with cheap house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 50000-100000 - with expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 50000-100000 - with expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 50000-100000 - with none house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 50000-100000 - with normal house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 50000-100000 - with normal house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 50000-100000 - with very-expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 50000-100000 - with very-expensive house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 100000-plus - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 100000-plus - with cheap house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 100000-plus - with expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 100000-plus - with expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 100000-plus - with none house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 100000-plus - with normal house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 100000-plus - with normal house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt 100000-plus - with very-expensive house 1`] = `"live-for-debts"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt no-debt - with cheap house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt no-debt - with expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt no-debt - with expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt no-debt - with none house 1`] = `"wealthy"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt no-debt - with normal house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt no-debt - with very-expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt no-debt - with very-expensive house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt under-5000 - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt under-5000 - with cheap house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt under-5000 - with expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt under-5000 - with expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt under-5000 - with none house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt under-5000 - with normal house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt under-5000 - with normal house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt under-5000 - with very-expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Passive income (5000-10000) - with debt under-5000 - with very-expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Passive income (10000-plus) - with debt 5000-10000 - with cheap house 1`] = `"wealthy"`;
 
@@ -634,7 +634,7 @@ exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly i
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 2000-3000 - with debt 5000-10000 - with expensive house 1`] = `"live-for-debts"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 2000-3000 - with debt 5000-10000 - with none house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 2000-3000 - with debt 5000-10000 - with none house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 2000-3000 - with debt 5000-10000 - with normal house 1`] = `"comfortable"`;
 
@@ -644,7 +644,7 @@ exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly i
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 2000-3000 - with debt 10000-25000 - with expensive house 1`] = `"live-for-debts"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 2000-3000 - with debt 10000-25000 - with none house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 2000-3000 - with debt 10000-25000 - with none house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 2000-3000 - with debt 10000-25000 - with normal house 1`] = `"comfortable"`;
 
@@ -654,7 +654,7 @@ exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly i
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 2000-3000 - with debt 25000-50000 - with expensive house 1`] = `"live-for-debts"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 2000-3000 - with debt 25000-50000 - with none house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 2000-3000 - with debt 25000-50000 - with none house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 2000-3000 - with debt 25000-50000 - with normal house 1`] = `"live-for-debts"`;
 
@@ -680,13 +680,13 @@ exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly i
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 2000-3000 - with debt 100000-plus - with very-expensive house 1`] = `"impossible"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 2000-3000 - with debt no-debt - with cheap house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 2000-3000 - with debt no-debt - with cheap house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 2000-3000 - with debt no-debt - with expensive house 1`] = `"struggling"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 2000-3000 - with debt no-debt - with none house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 2000-3000 - with debt no-debt - with none house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 2000-3000 - with debt no-debt - with normal house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 2000-3000 - with debt no-debt - with normal house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 2000-3000 - with debt no-debt - with very-expensive house 1`] = `"impossible"`;
 
@@ -694,47 +694,47 @@ exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly i
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 2000-3000 - with debt under-5000 - with expensive house 1`] = `"struggling"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 2000-3000 - with debt under-5000 - with none house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 2000-3000 - with debt under-5000 - with none house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 2000-3000 - with debt under-5000 - with normal house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 2000-3000 - with debt under-5000 - with very-expensive house 1`] = `"impossible"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt 5000-10000 - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt 5000-10000 - with cheap house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt 5000-10000 - with expensive house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt 5000-10000 - with expensive house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt 5000-10000 - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt 5000-10000 - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt 5000-10000 - with normal house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt 5000-10000 - with normal house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt 5000-10000 - with very-expensive house 1`] = `"live-for-debts"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt 10000-25000 - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt 10000-25000 - with cheap house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt 10000-25000 - with expensive house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt 10000-25000 - with expensive house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt 10000-25000 - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt 10000-25000 - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt 10000-25000 - with normal house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt 10000-25000 - with normal house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt 10000-25000 - with very-expensive house 1`] = `"death-by-debts"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt 25000-50000 - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt 25000-50000 - with cheap house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt 25000-50000 - with expensive house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt 25000-50000 - with expensive house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt 25000-50000 - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt 25000-50000 - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt 25000-50000 - with normal house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt 25000-50000 - with normal house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt 25000-50000 - with very-expensive house 1`] = `"death-by-debts"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt 50000-100000 - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt 50000-100000 - with cheap house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt 50000-100000 - with expensive house 1`] = `"live-for-debts"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt 50000-100000 - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt 50000-100000 - with none house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt 50000-100000 - with normal house 1`] = `"live-for-debts"`;
 
@@ -750,63 +750,63 @@ exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly i
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt 100000-plus - with very-expensive house 1`] = `"death-by-debts"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt no-debt - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt no-debt - with cheap house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt no-debt - with expensive house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt no-debt - with expensive house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt no-debt - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt no-debt - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt no-debt - with normal house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt no-debt - with normal house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt no-debt - with very-expensive house 1`] = `"struggling"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt under-5000 - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt under-5000 - with cheap house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt under-5000 - with expensive house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt under-5000 - with expensive house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt under-5000 - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt under-5000 - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt under-5000 - with normal house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt under-5000 - with normal house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 3000-5000 - with debt under-5000 - with very-expensive house 1`] = `"live-for-debts"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 5000-10000 - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 5000-10000 - with cheap house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 5000-10000 - with expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 5000-10000 - with expensive house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 5000-10000 - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 5000-10000 - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 5000-10000 - with normal house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 5000-10000 - with normal house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 5000-10000 - with very-expensive house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 5000-10000 - with very-expensive house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 10000-25000 - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 10000-25000 - with cheap house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 10000-25000 - with expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 10000-25000 - with expensive house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 10000-25000 - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 10000-25000 - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 10000-25000 - with normal house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 10000-25000 - with normal house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 10000-25000 - with very-expensive house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 10000-25000 - with very-expensive house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 25000-50000 - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 25000-50000 - with cheap house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 25000-50000 - with expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 25000-50000 - with expensive house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 25000-50000 - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 25000-50000 - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 25000-50000 - with normal house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 25000-50000 - with normal house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 25000-50000 - with very-expensive house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 25000-50000 - with very-expensive house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 50000-100000 - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 50000-100000 - with cheap house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 50000-100000 - with expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 50000-100000 - with expensive house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 50000-100000 - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 50000-100000 - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 50000-100000 - with normal house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 50000-100000 - with normal house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 50000-100000 - with very-expensive house 1`] = `"live-for-debts"`;
 
@@ -814,75 +814,75 @@ exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly i
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 100000-plus - with expensive house 1`] = `"live-for-debts"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 100000-plus - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 100000-plus - with none house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 100000-plus - with normal house 1`] = `"live-for-debts"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt 100000-plus - with very-expensive house 1`] = `"live-for-debts"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt no-debt - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt no-debt - with cheap house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt no-debt - with expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt no-debt - with expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt no-debt - with none house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt no-debt - with normal house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt no-debt - with normal house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt no-debt - with very-expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt no-debt - with very-expensive house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt under-5000 - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt under-5000 - with cheap house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt under-5000 - with expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt under-5000 - with expensive house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt under-5000 - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt under-5000 - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt under-5000 - with normal house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt under-5000 - with normal house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt under-5000 - with very-expensive house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 5000-7500 - with debt under-5000 - with very-expensive house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt 5000-10000 - with cheap house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt 5000-10000 - with expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt 5000-10000 - with expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt 5000-10000 - with none house 1`] = `"wealthy"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt 5000-10000 - with normal house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt 5000-10000 - with very-expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt 5000-10000 - with very-expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt 10000-25000 - with cheap house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt 10000-25000 - with expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt 10000-25000 - with expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt 10000-25000 - with none house 1`] = `"wealthy"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt 10000-25000 - with normal house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt 10000-25000 - with very-expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt 10000-25000 - with very-expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt 25000-50000 - with cheap house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt 25000-50000 - with expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt 25000-50000 - with expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt 25000-50000 - with none house 1`] = `"wealthy"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt 25000-50000 - with normal house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt 25000-50000 - with very-expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt 25000-50000 - with very-expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt 50000-100000 - with cheap house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt 50000-100000 - with expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt 50000-100000 - with expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt 50000-100000 - with none house 1`] = `"wealthy"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt 50000-100000 - with normal house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt 50000-100000 - with very-expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt 50000-100000 - with very-expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt 100000-plus - with cheap house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt 100000-plus - with expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt 100000-plus - with expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt 100000-plus - with none house 1`] = `"wealthy"`;
 
@@ -898,17 +898,17 @@ exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly i
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt no-debt - with normal house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt no-debt - with very-expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt no-debt - with very-expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt under-5000 - with cheap house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt under-5000 - with expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt under-5000 - with expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt under-5000 - with none house 1`] = `"wealthy"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt under-5000 - with normal house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt under-5000 - with very-expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 7500-10000 - with debt under-5000 - with very-expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [ES] Worker with monthly income 10000-15000 - with debt 5000-10000 - with cheap house 1`] = `"wealthy"`;
 
@@ -1404,7 +1404,7 @@ exports[`questionnaire service calculateLivingQuality [US] Passive income (2500-
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (2500-5000) - with debt 5000-10000 - with expensive house 1`] = `"survival"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (2500-5000) - with debt 5000-10000 - with none house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (2500-5000) - with debt 5000-10000 - with none house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (2500-5000) - with debt 5000-10000 - with normal house 1`] = `"comfortable"`;
 
@@ -1414,7 +1414,7 @@ exports[`questionnaire service calculateLivingQuality [US] Passive income (2500-
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (2500-5000) - with debt 10000-25000 - with expensive house 1`] = `"survival"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (2500-5000) - with debt 10000-25000 - with none house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (2500-5000) - with debt 10000-25000 - with none house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (2500-5000) - with debt 10000-25000 - with normal house 1`] = `"comfortable"`;
 
@@ -1424,7 +1424,7 @@ exports[`questionnaire service calculateLivingQuality [US] Passive income (2500-
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (2500-5000) - with debt 25000-50000 - with expensive house 1`] = `"survival"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (2500-5000) - with debt 25000-50000 - with none house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (2500-5000) - with debt 25000-50000 - with none house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (2500-5000) - with debt 25000-50000 - with normal house 1`] = `"live-for-debts"`;
 
@@ -1434,7 +1434,7 @@ exports[`questionnaire service calculateLivingQuality [US] Passive income (2500-
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (2500-5000) - with debt 50000-100000 - with expensive house 1`] = `"survival"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (2500-5000) - with debt 50000-100000 - with none house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (2500-5000) - with debt 50000-100000 - with none house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (2500-5000) - with debt 50000-100000 - with normal house 1`] = `"live-for-debts"`;
 
@@ -1454,7 +1454,7 @@ exports[`questionnaire service calculateLivingQuality [US] Passive income (2500-
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (2500-5000) - with debt no-debt - with expensive house 1`] = `"survival"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (2500-5000) - with debt no-debt - with none house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (2500-5000) - with debt no-debt - with none house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (2500-5000) - with debt no-debt - with normal house 1`] = `"comfortable"`;
 
@@ -1464,131 +1464,131 @@ exports[`questionnaire service calculateLivingQuality [US] Passive income (2500-
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (2500-5000) - with debt under-5000 - with expensive house 1`] = `"survival"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (2500-5000) - with debt under-5000 - with none house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (2500-5000) - with debt under-5000 - with none house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (2500-5000) - with debt under-5000 - with normal house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (2500-5000) - with debt under-5000 - with very-expensive house 1`] = `"impossible"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 5000-10000 - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 5000-10000 - with cheap house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 5000-10000 - with expensive house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 5000-10000 - with expensive house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 5000-10000 - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 5000-10000 - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 5000-10000 - with normal house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 5000-10000 - with normal house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 5000-10000 - with very-expensive house 1`] = `"struggling"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 10000-25000 - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 10000-25000 - with cheap house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 10000-25000 - with expensive house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 10000-25000 - with expensive house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 10000-25000 - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 10000-25000 - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 10000-25000 - with normal house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 10000-25000 - with normal house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 10000-25000 - with very-expensive house 1`] = `"live-for-debts"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 25000-50000 - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 25000-50000 - with cheap house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 25000-50000 - with expensive house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 25000-50000 - with expensive house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 25000-50000 - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 25000-50000 - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 25000-50000 - with normal house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 25000-50000 - with normal house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 25000-50000 - with very-expensive house 1`] = `"live-for-debts"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 50000-100000 - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 50000-100000 - with cheap house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 50000-100000 - with expensive house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 50000-100000 - with expensive house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 50000-100000 - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 50000-100000 - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 50000-100000 - with normal house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 50000-100000 - with normal house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 50000-100000 - with very-expensive house 1`] = `"live-for-debts"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 100000-plus - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 100000-plus - with cheap house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 100000-plus - with expensive house 1`] = `"live-for-debts"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 100000-plus - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 100000-plus - with none house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 100000-plus - with normal house 1`] = `"live-for-debts"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt 100000-plus - with very-expensive house 1`] = `"death-by-debts"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt no-debt - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt no-debt - with cheap house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt no-debt - with expensive house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt no-debt - with expensive house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt no-debt - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt no-debt - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt no-debt - with normal house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt no-debt - with normal house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt no-debt - with very-expensive house 1`] = `"getting-by"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt under-5000 - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt under-5000 - with cheap house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt under-5000 - with expensive house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt under-5000 - with expensive house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt under-5000 - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt under-5000 - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt under-5000 - with normal house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt under-5000 - with normal house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (5000-10000) - with debt under-5000 - with very-expensive house 1`] = `"struggling"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt 5000-10000 - with cheap house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt 5000-10000 - with expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt 5000-10000 - with expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt 5000-10000 - with none house 1`] = `"wealthy"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt 5000-10000 - with normal house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt 5000-10000 - with very-expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt 5000-10000 - with very-expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt 10000-25000 - with cheap house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt 10000-25000 - with expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt 10000-25000 - with expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt 10000-25000 - with none house 1`] = `"wealthy"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt 10000-25000 - with normal house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt 10000-25000 - with very-expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt 10000-25000 - with very-expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt 25000-50000 - with cheap house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt 25000-50000 - with expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt 25000-50000 - with expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt 25000-50000 - with none house 1`] = `"wealthy"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt 25000-50000 - with normal house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt 25000-50000 - with very-expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt 25000-50000 - with very-expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt 50000-100000 - with cheap house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt 50000-100000 - with expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt 50000-100000 - with expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt 50000-100000 - with none house 1`] = `"wealthy"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt 50000-100000 - with normal house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt 50000-100000 - with very-expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt 50000-100000 - with very-expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt 100000-plus - with cheap house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt 100000-plus - with expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt 100000-plus - with expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt 100000-plus - with none house 1`] = `"wealthy"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt 100000-plus - with normal house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt 100000-plus - with very-expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt 100000-plus - with very-expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt no-debt - with cheap house 1`] = `"wealthy"`;
 
@@ -1598,17 +1598,17 @@ exports[`questionnaire service calculateLivingQuality [US] Passive income (10000
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt no-debt - with normal house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt no-debt - with very-expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt no-debt - with very-expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt under-5000 - with cheap house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt under-5000 - with expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt under-5000 - with expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt under-5000 - with none house 1`] = `"wealthy"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt under-5000 - with normal house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt under-5000 - with very-expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Passive income (10000-plus) - with debt under-5000 - with very-expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Passive income (none) - with debt 5000-10000 - with cheap house 1`] = `"impossible"`;
 
@@ -1964,7 +1964,7 @@ exports[`questionnaire service calculateLivingQuality [US] Worker with monthly i
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 3000-5000 - with debt 5000-10000 - with expensive house 1`] = `"death-by-debts"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 3000-5000 - with debt 5000-10000 - with none house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 3000-5000 - with debt 5000-10000 - with none house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 3000-5000 - with debt 5000-10000 - with normal house 1`] = `"comfortable"`;
 
@@ -1974,7 +1974,7 @@ exports[`questionnaire service calculateLivingQuality [US] Worker with monthly i
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 3000-5000 - with debt 10000-25000 - with expensive house 1`] = `"death-by-debts"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 3000-5000 - with debt 10000-25000 - with none house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 3000-5000 - with debt 10000-25000 - with none house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 3000-5000 - with debt 10000-25000 - with normal house 1`] = `"comfortable"`;
 
@@ -1984,7 +1984,7 @@ exports[`questionnaire service calculateLivingQuality [US] Worker with monthly i
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 3000-5000 - with debt 25000-50000 - with expensive house 1`] = `"death-by-debts"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 3000-5000 - with debt 25000-50000 - with none house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 3000-5000 - with debt 25000-50000 - with none house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 3000-5000 - with debt 25000-50000 - with normal house 1`] = `"comfortable"`;
 
@@ -1994,7 +1994,7 @@ exports[`questionnaire service calculateLivingQuality [US] Worker with monthly i
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 3000-5000 - with debt 50000-100000 - with expensive house 1`] = `"death-by-debts"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 3000-5000 - with debt 50000-100000 - with none house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 3000-5000 - with debt 50000-100000 - with none house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 3000-5000 - with debt 50000-100000 - with normal house 1`] = `"live-for-debts"`;
 
@@ -2014,7 +2014,7 @@ exports[`questionnaire service calculateLivingQuality [US] Worker with monthly i
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 3000-5000 - with debt no-debt - with expensive house 1`] = `"survival"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 3000-5000 - with debt no-debt - with none house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 3000-5000 - with debt no-debt - with none house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 3000-5000 - with debt no-debt - with normal house 1`] = `"comfortable"`;
 
@@ -2024,49 +2024,49 @@ exports[`questionnaire service calculateLivingQuality [US] Worker with monthly i
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 3000-5000 - with debt under-5000 - with expensive house 1`] = `"death-by-debts"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 3000-5000 - with debt under-5000 - with none house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 3000-5000 - with debt under-5000 - with none house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 3000-5000 - with debt under-5000 - with normal house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 3000-5000 - with debt under-5000 - with very-expensive house 1`] = `"impossible"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt 5000-10000 - with cheap house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt 5000-10000 - with cheap house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt 5000-10000 - with expensive house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt 5000-10000 - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt 5000-10000 - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt 5000-10000 - with normal house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt 5000-10000 - with normal house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt 5000-10000 - with very-expensive house 1`] = `"survival"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt 10000-25000 - with cheap house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt 10000-25000 - with cheap house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt 10000-25000 - with expensive house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt 10000-25000 - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt 10000-25000 - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt 10000-25000 - with normal house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt 10000-25000 - with normal house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt 10000-25000 - with very-expensive house 1`] = `"survival"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt 25000-50000 - with cheap house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt 25000-50000 - with cheap house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt 25000-50000 - with expensive house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt 25000-50000 - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt 25000-50000 - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt 25000-50000 - with normal house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt 25000-50000 - with normal house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt 25000-50000 - with very-expensive house 1`] = `"survival"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt 50000-100000 - with cheap house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt 50000-100000 - with cheap house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt 50000-100000 - with expensive house 1`] = `"live-for-debts"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt 50000-100000 - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt 50000-100000 - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt 50000-100000 - with normal house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt 50000-100000 - with normal house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt 50000-100000 - with very-expensive house 1`] = `"survival"`;
 
@@ -2074,171 +2074,171 @@ exports[`questionnaire service calculateLivingQuality [US] Worker with monthly i
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt 100000-plus - with expensive house 1`] = `"live-for-debts"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt 100000-plus - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt 100000-plus - with none house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt 100000-plus - with normal house 1`] = `"live-for-debts"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt 100000-plus - with very-expensive house 1`] = `"survival"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt no-debt - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt no-debt - with cheap house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt no-debt - with expensive house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt no-debt - with expensive house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt no-debt - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt no-debt - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt no-debt - with normal house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt no-debt - with normal house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt no-debt - with very-expensive house 1`] = `"survival"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt under-5000 - with cheap house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt under-5000 - with cheap house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt under-5000 - with expensive house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt under-5000 - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt under-5000 - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt under-5000 - with normal house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt under-5000 - with normal house 1`] = `"comfortable"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 5000-7500 - with debt under-5000 - with very-expensive house 1`] = `"survival"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 5000-10000 - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 5000-10000 - with cheap house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 5000-10000 - with expensive house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 5000-10000 - with expensive house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 5000-10000 - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 5000-10000 - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 5000-10000 - with normal house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 5000-10000 - with normal house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 5000-10000 - with very-expensive house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 10000-25000 - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 10000-25000 - with cheap house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 10000-25000 - with expensive house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 10000-25000 - with expensive house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 10000-25000 - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 10000-25000 - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 10000-25000 - with normal house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 10000-25000 - with normal house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 10000-25000 - with very-expensive house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 25000-50000 - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 25000-50000 - with cheap house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 25000-50000 - with expensive house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 25000-50000 - with expensive house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 25000-50000 - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 25000-50000 - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 25000-50000 - with normal house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 25000-50000 - with normal house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 25000-50000 - with very-expensive house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 50000-100000 - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 50000-100000 - with cheap house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 50000-100000 - with expensive house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 50000-100000 - with expensive house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 50000-100000 - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 50000-100000 - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 50000-100000 - with normal house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 50000-100000 - with normal house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 50000-100000 - with very-expensive house 1`] = `"live-for-debts"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 100000-plus - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 100000-plus - with cheap house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 100000-plus - with expensive house 1`] = `"live-for-debts"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 100000-plus - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 100000-plus - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 100000-plus - with normal house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 100000-plus - with normal house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt 100000-plus - with very-expensive house 1`] = `"live-for-debts"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt no-debt - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt no-debt - with cheap house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt no-debt - with expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt no-debt - with expensive house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt no-debt - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt no-debt - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt no-debt - with normal house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt no-debt - with normal house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt no-debt - with very-expensive house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt under-5000 - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt under-5000 - with cheap house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt under-5000 - with expensive house 1`] = `"prosperous"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt under-5000 - with expensive house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt under-5000 - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt under-5000 - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt under-5000 - with normal house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt under-5000 - with normal house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 7500-10000 - with debt under-5000 - with very-expensive house 1`] = `"comfortable"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 5000-10000 - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 5000-10000 - with cheap house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 5000-10000 - with expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 5000-10000 - with expensive house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 5000-10000 - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 5000-10000 - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 5000-10000 - with normal house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 5000-10000 - with normal house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 5000-10000 - with very-expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 5000-10000 - with very-expensive house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 10000-25000 - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 10000-25000 - with cheap house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 10000-25000 - with expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 10000-25000 - with expensive house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 10000-25000 - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 10000-25000 - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 10000-25000 - with normal house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 10000-25000 - with normal house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 10000-25000 - with very-expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 10000-25000 - with very-expensive house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 25000-50000 - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 25000-50000 - with cheap house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 25000-50000 - with expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 25000-50000 - with expensive house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 25000-50000 - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 25000-50000 - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 25000-50000 - with normal house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 25000-50000 - with normal house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 25000-50000 - with very-expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 25000-50000 - with very-expensive house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 50000-100000 - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 50000-100000 - with cheap house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 50000-100000 - with expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 50000-100000 - with expensive house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 50000-100000 - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 50000-100000 - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 50000-100000 - with normal house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 50000-100000 - with normal house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 50000-100000 - with very-expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 50000-100000 - with very-expensive house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 100000-plus - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 100000-plus - with cheap house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 100000-plus - with expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 100000-plus - with expensive house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 100000-plus - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 100000-plus - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 100000-plus - with normal house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 100000-plus - with normal house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 100000-plus - with very-expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt 100000-plus - with very-expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt no-debt - with cheap house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt no-debt - with expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt no-debt - with expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt no-debt - with none house 1`] = `"wealthy"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt no-debt - with normal house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt no-debt - with very-expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt no-debt - with very-expensive house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt under-5000 - with cheap house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt under-5000 - with cheap house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt under-5000 - with expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt under-5000 - with expensive house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt under-5000 - with none house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt under-5000 - with none house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt under-5000 - with normal house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt under-5000 - with normal house 1`] = `"prosperous"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt under-5000 - with very-expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 10000-15000 - with debt under-5000 - with very-expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 15000-20000 - with debt 5000-10000 - with cheap house 1`] = `"wealthy"`;
 
@@ -2248,7 +2248,7 @@ exports[`questionnaire service calculateLivingQuality [US] Worker with monthly i
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 15000-20000 - with debt 5000-10000 - with normal house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 15000-20000 - with debt 5000-10000 - with very-expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 15000-20000 - with debt 5000-10000 - with very-expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 15000-20000 - with debt 10000-25000 - with cheap house 1`] = `"wealthy"`;
 
@@ -2258,7 +2258,7 @@ exports[`questionnaire service calculateLivingQuality [US] Worker with monthly i
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 15000-20000 - with debt 10000-25000 - with normal house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 15000-20000 - with debt 10000-25000 - with very-expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 15000-20000 - with debt 10000-25000 - with very-expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 15000-20000 - with debt 25000-50000 - with cheap house 1`] = `"wealthy"`;
 
@@ -2268,7 +2268,7 @@ exports[`questionnaire service calculateLivingQuality [US] Worker with monthly i
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 15000-20000 - with debt 25000-50000 - with normal house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 15000-20000 - with debt 25000-50000 - with very-expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 15000-20000 - with debt 25000-50000 - with very-expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 15000-20000 - with debt 50000-100000 - with cheap house 1`] = `"wealthy"`;
 
@@ -2278,7 +2278,7 @@ exports[`questionnaire service calculateLivingQuality [US] Worker with monthly i
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 15000-20000 - with debt 50000-100000 - with normal house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 15000-20000 - with debt 50000-100000 - with very-expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 15000-20000 - with debt 50000-100000 - with very-expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 15000-20000 - with debt 100000-plus - with cheap house 1`] = `"wealthy"`;
 
@@ -2288,7 +2288,7 @@ exports[`questionnaire service calculateLivingQuality [US] Worker with monthly i
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 15000-20000 - with debt 100000-plus - with normal house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 15000-20000 - with debt 100000-plus - with very-expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 15000-20000 - with debt 100000-plus - with very-expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 15000-20000 - with debt no-debt - with cheap house 1`] = `"wealthy"`;
 
@@ -2308,7 +2308,7 @@ exports[`questionnaire service calculateLivingQuality [US] Worker with monthly i
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 15000-20000 - with debt under-5000 - with normal house 1`] = `"wealthy"`;
 
-exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 15000-20000 - with debt under-5000 - with very-expensive house 1`] = `"wealthy"`;
+exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 15000-20000 - with debt under-5000 - with very-expensive house 1`] = `"prosperous"`;
 
 exports[`questionnaire service calculateLivingQuality [US] Worker with monthly income 20000-plus - with debt 5000-10000 - with cheap house 1`] = `"wealthy"`;
 

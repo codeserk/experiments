@@ -10,7 +10,27 @@ import {
   getQuestionnaireNextStep,
   getQuestionnaireStepHasValue,
 } from '../../modules/questionnaire/questionnaire.service'
-import { QuestionnaireStep, type ActiveQuestionnaire } from '../../modules/questionnaire/questionnaire.types'
+import {
+  AgeRange,
+  DebtLevel,
+  Education,
+  Ethnicity,
+  Gender,
+  HealthInsurance,
+  HouseProperty,
+  HousePropertyCost,
+  ImmigrationStatus,
+  InvestmentArea,
+  MonthlyIncome,
+  PassiveIncome,
+  PoliticalAuthorityView,
+  PoliticalEconomicView,
+  QuestionnaireStep,
+  Religion,
+  SavingsLevel,
+  WorkingArea,
+  type ActiveQuestionnaire,
+} from '../../modules/questionnaire/questionnaire.types'
 import { classes } from '../../util/style'
 import { View } from '../View'
 import { QuestionnaireButtons } from './Buttons'
@@ -42,31 +62,31 @@ export const QuestionnaireView: FC = () => {
   const isActive = useSignal(false)
   const visitedStepsMap = useSignal<Partial<Record<QuestionnaireStep, true>>>({})
   const isTransitioning = useSignal(false)
-  const stepIndex = useSignal(0)
+  const stepIndex = useSignal(16)
   const hasReviewed = useSignal(false)
   const questionnaire = useSignal<ActiveQuestionnaire>({
     profile: {
-      // ageRange: AgeRange.Age18To24,
-      // gender: Gender.Man,
-      // ethnicity: Ethnicity.WhiteCaucasian,
-      // religion: Religion.Agnostic,
-      // education: Education.BachelorsDegree,
-      // immigrationStatus: ImmigrationStatus.BornInCurrentCountry,
-      // politicalEconomicView: PoliticalEconomicView.MixedEconomy,
-      // politicalAuthorityView: PoliticalAuthorityView.BalancedGovernance,
+      ageRange: AgeRange.Age18To24,
+      gender: Gender.Man,
+      ethnicity: Ethnicity.WhiteCaucasian,
+      religion: Religion.Agnostic,
+      education: Education.BachelorsDegree,
+      immigrationStatus: ImmigrationStatus.BornInCurrentCountry,
+      politicalEconomicView: PoliticalEconomicView.MixedEconomy,
+      politicalAuthorityView: PoliticalAuthorityView.BalancedGovernance,
     },
     answers: {
-      // workingArea: WorkingArea.Engineering,
-      // monthlyIncome: MonthlyIncome.Income3000To5000,
-      // debtLevel: DebtLevel.NoDebt,
-      // savingsLevel: SavingsLevel.Savings50000To100000,
-      // healthInsurance: HealthInsurance.EmployerProvided,
-      // investments: [InvestmentArea.Stocks, InvestmentArea.Cryptocurrency],
-      // passiveIncome: PassiveIncome.Under500,
-      // house: {
-      //   property: HouseProperty.Renting,
-      //   monthlyCost: HousePropertyCost.Normal,
-      // },
+      workingArea: WorkingArea.Engineering,
+      monthlyIncome: MonthlyIncome.Income3000To5000,
+      debtLevel: DebtLevel.NoDebt,
+      savingsLevel: SavingsLevel.Savings50000To100000,
+      healthInsurance: HealthInsurance.EmployerProvided,
+      investments: [InvestmentArea.Stocks, InvestmentArea.Cryptocurrency],
+      passiveIncome: PassiveIncome.Under500,
+      house: {
+        property: HouseProperty.Renting,
+        monthlyCost: HousePropertyCost.Normal,
+      },
     },
   })
   const countryCode = useSignal('ES')
@@ -231,7 +251,7 @@ export const QuestionnaireView: FC = () => {
 }
 
 const Container = styled.div`
-  max-width: 600px;
+  max-width: var(--block-width);
   margin: 0 auto;
 
   &.active .steps {
@@ -251,14 +271,14 @@ const Container = styled.div`
   }
 
   .header {
-    margin-top: 3em;
+    margin-top: 5em;
     padding: 0 12px;
     min-height: 10em;
     transition: opacity 0.4s ease-in-out;
     animation: sectionEnter 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 
     h1 {
-      font-size: 48px;
+      font-size: 4em;
       font-weight: 900;
       color: #000;
       text-transform: uppercase;
@@ -269,7 +289,7 @@ const Container = styled.div`
     }
 
     h2 {
-      font-size: 20px;
+      font-size: 2em;
       font-weight: 700;
       color: #000;
       margin-bottom: 30px;
@@ -302,7 +322,7 @@ const Container = styled.div`
       align-items: center;
       justify-content: space-between;
       max-width: 100%;
-      width: 600px;
+      width: var(--block-width);
     }
 
     .button {
@@ -324,7 +344,7 @@ const Container = styled.div`
 
   .options-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 0.5rem;
     margin-bottom: 2rem;
     animation: sectionEnter 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -346,7 +366,7 @@ const Container = styled.div`
     background: #fff;
     border: 4px solid #000;
     padding: 10px 24px;
-    font-size: 24px;
+    font-size: 2em;
     font-weight: 400;
     font-family: var(--font-body);
     text-transform: uppercase;
@@ -370,6 +390,10 @@ const Container = styled.div`
     &.active {
       transform: translate(4px, 4px);
       box-shadow: none;
+    }
+
+    @media (min-width: 700px) {
+      font-size: 1.5em;
     }
   }
 
@@ -1178,52 +1202,6 @@ const Container = styled.div`
     }
   }
 
-  .review {
-    display: flex;
-    padding: 12px;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    margin-top: 3em;
-    max-width: 400px;
-    min-height: 60vh;
-    animation: sectionEnter 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-
-    h1 {
-      font-size: 54px;
-      font-weight: 900;
-      color: #000;
-      text-transform: uppercase;
-      margin-bottom: 12px;
-      line-height: 1;
-      letter-spacing: -1px;
-      text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.9);
-    }
-
-    h2 {
-      font-size: 32px;
-      font-weight: 700;
-      color: #000;
-      line-height: 1.3;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.9);
-    }
-
-    h3 {
-      font-size: 24px;
-      font-weight: 500;
-      color: #000;
-
-      line-height: 1.3;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.9);
-    }
-  }
-
   .result {
     display: flex;
     height: 100%;
@@ -1235,7 +1213,7 @@ const Container = styled.div`
     animation: sectionEnter 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 
     h1 {
-      font-size: 54px;
+      font-size: 5em;
       font-weight: 900;
       color: #000;
       text-transform: uppercase;
@@ -1246,7 +1224,7 @@ const Container = styled.div`
     }
 
     h2 {
-      font-size: 32px;
+      font-size: 3em;
       font-weight: 700;
       color: #000;
       line-height: 1.3;
@@ -1256,7 +1234,7 @@ const Container = styled.div`
     }
 
     h3 {
-      font-size: 24px;
+      font-size: 2em;
       font-weight: 500;
       color: #000;
 

@@ -8,7 +8,7 @@ import { t } from '../util/astro-i18n'
     <h1>{t('welcome.title')}</h1>
     <p>{t('welcome.subtitle')}</p>
 
-    <Button client:load id="start-button" size="big" confetti>{t('welcome.start')}</Button>
+    <Button client:load id="start-button" size="big" rounded confetti>{t('welcome.start')}</Button>
   </div>
 
   <aside>
@@ -19,7 +19,7 @@ import { t } from '../util/astro-i18n'
 <style>
   .welcome-container {
     text-align: center;
-    max-width: 600px;
+    max-width: var(--block-width);
     padding: 12px 24px;
     margin: 0 auto;
     min-height: 100vh;
@@ -48,7 +48,7 @@ import { t } from '../util/astro-i18n'
     }
 
     h1 {
-      font-size: 72px;
+      font-size: 6em;
       color: #000;
       text-transform: uppercase;
       margin-bottom: 16px;
@@ -60,7 +60,7 @@ import { t } from '../util/astro-i18n'
     }
 
     p {
-      font-size: 24px;
+      font-size: 2em;
       color: #000;
       margin-bottom: 40px;
       font-family: var(--font-body);
@@ -79,8 +79,9 @@ import { t } from '../util/astro-i18n'
       justify-content: center;
 
       .button {
-        transition: all 0.4s ease-in-out;
-        transition-delay: 0.2s;
+        background: var(--color-pink);
+        color: white;
+        transition: opacity 0.4s ease-in-out;
       }
     }
 

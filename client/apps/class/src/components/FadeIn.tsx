@@ -6,9 +6,11 @@ import { classes } from '../util/style'
 
 interface FadeInProps extends PropsWithChildren {
   readonly className?: string
+
+  readonly onAppear?: () => void
 }
 
-export const FadeInView = ({ className, children }: FadeInProps) => {
+export const FadeInView = ({ className, onAppear, children }: FadeInProps) => {
   const isVisible = useSignal(false)
   const elementRef = useRef<HTMLDivElement>(null)
 
@@ -17,6 +19,7 @@ export const FadeInView = ({ className, children }: FadeInProps) => {
       ([entry]) => {
         if (entry.isIntersecting) {
           isVisible.value = true
+          onAppear?.()
         }
       },
       { threshold: 0.1 },

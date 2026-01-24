@@ -26,7 +26,7 @@ jobs:
         run: |
           rm -rf dist
           mkdir dist
-          echo "Hello" > index.html
+          echo "Hello" > dist/index.html
 
       - name: Build class
         working-directory: ./client/apps/class/

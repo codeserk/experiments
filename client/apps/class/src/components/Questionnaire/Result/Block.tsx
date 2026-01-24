@@ -2,10 +2,16 @@ import type { FC, PropsWithChildren } from 'preact/compat'
 import styled from 'styled-components'
 import { FadeInView } from '../../FadeIn'
 
-export const QuestionnaireResultBlock: FC<PropsWithChildren> = ({ children }) => {
+interface Props extends PropsWithChildren {
+  readonly onAppear?: () => void
+}
+
+export const QuestionnaireResultBlock: FC<Props> = ({ onAppear, children }) => {
   return (
     <Container>
-      <FadeInView className="block-content">{children}</FadeInView>
+      <FadeInView className="block-content" onAppear={onAppear}>
+        {children}
+      </FadeInView>
     </Container>
   )
 }
@@ -47,10 +53,9 @@ const Container = styled.div`
   }
 
   h3 {
-    font-size: 24px;
+    font-size: 2em;
     font-weight: 500;
     color: #000;
-
     line-height: 1.3;
     text-transform: uppercase;
     letter-spacing: 0.5px;

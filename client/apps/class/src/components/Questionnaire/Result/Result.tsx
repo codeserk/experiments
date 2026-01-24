@@ -1,4 +1,4 @@
-import type { ReadonlySignal } from '@preact/signals'
+import { useSignal, type ReadonlySignal } from '@preact/signals'
 
 import { useEffect, type FC } from 'preact/compat'
 import { Trans, useTranslation } from 'react-i18next'
@@ -6,6 +6,7 @@ import styled from 'styled-components'
 import { SocialClass, type QuestionnaireResult } from '../../../modules/questionnaire/questionnaire.types'
 import { Button } from '../../Button'
 import { QuestionnaireResultBlock } from './Block'
+import { QuestionnaireSummaryView } from './Summary'
 
 interface Props {
   readonly result: ReadonlySignal<QuestionnaireResult | undefined>
@@ -23,6 +24,8 @@ const components = {
 
 export const QuestionnaireResultView: FC<Props> = ({ result }) => {
   const { t } = useTranslation()
+
+  const isLastVisible = useSignal(false)
 
   useEffect(() => {
     if (result.value) {
@@ -203,7 +206,20 @@ export const QuestionnaireResultView: FC<Props> = ({ result }) => {
         </QuestionnaireResultBlock>
       )}
 
-      <span className="scroll-indicator">Scroll for more...</span>
+      <QuestionnaireResultBlock onAppear={() => (isLastVisible.value = true)}>
+        <QuestionnaireSummaryView />
+      </QuestionnaireResultBlock>
+
+      {!isLastVisible.value ? (
+        <span className="scroll-indicator">{t('questionnaire.result.scrollForMore')}</span>
+      ) : (
+        <aside>
+          <p>
+            {t('welcome.aside')}
+            <a href="https://www.codeserk.es">@codeserk</a>
+          </p>
+        </aside>
+      )}
     </Container>
   )
 }
@@ -238,11 +254,9 @@ const Container = styled.div`
   }
 
   h2 {
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 500;
     color: #000;
-    line-height: 1.3;
-    letter-spacing: 0.5px;
     text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.9);
     br {
       margin-bottom: 0.5em;
@@ -264,11 +278,24 @@ const Container = styled.div`
     bottom: 2px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 14px;
+    font-size: 1em;
     font-weight: 700;
     text-transform: uppercase;
     color: #000;
     animation: bounce 2s ease-in-out infinite;
+  }
+
+  aside {
+    position: fixed;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #000;
+    flex: 1;
+    p {
+      font-size: 1em;
+      margin: 0;
+    }
   }
 
   @keyframes bounce {
@@ -278,6 +305,15 @@ const Container = styled.div`
     }
     50% {
       transform: translateX(-50%) translateY(-10px);
+    }
+  }
+
+  @media (min-width: 700px) {
+    h1 {
+      font-size: 4em;
+    }
+    h2 {
+      font-size: 2em;
     }
   }
 `

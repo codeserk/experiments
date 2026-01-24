@@ -6,6 +6,7 @@
     "lint": "eslint --ext .css,.ts,.tsx,.md,.mdx,.astro src",
     "lint:fix": "eslint --fix src",
     "dev": "astro dev",
+    "dev:host": "astro dev --host",
     "test": "jest",
     "test:watch": "jest --watch",
     "build": "astro build",
