@@ -48,7 +48,6 @@ export const QuestionnaireSummaryView: FC = () => {
   return (
     <Container>
       <div className={`rate-container ${rateResult.value ?? ''} `}>
-        <h2>{t('questionnaire.result.summary.rate.title')}</h2>
         <div className="buttons">
           <Button
             rounded
@@ -85,11 +84,13 @@ export const QuestionnaireSummaryView: FC = () => {
 // Styles
 
 const Container = styled.div`
+  margin-top: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 3em;
+  max-width: 90vw;
 
   @keyframes bounce {
     0%,
@@ -149,6 +150,7 @@ const Container = styled.div`
         align-items: center;
         justify-content: space-between;
         width: 150px;
+        max-width: 40vw;
         transition: width 0.4s ease-in-out;
 
         span {

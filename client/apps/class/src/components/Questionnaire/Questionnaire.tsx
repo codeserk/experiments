@@ -13,7 +13,7 @@ import {
 } from '../../modules/questionnaire/questionnaire.service'
 import { QuestionnaireStep, type ActiveQuestionnaire } from '../../modules/questionnaire/questionnaire.types'
 import { TrackerStoreContext, useTrackerStore } from '../../modules/tracker/tracker.store'
-import type { TrackerEventContent } from '../../modules/tracker/tracker.types'
+import type { TrackerEventContent, TrackerEventsDistributionTypeName } from '../../modules/tracker/tracker.types'
 import { classes } from '../../util/style'
 import { View } from '../View'
 import { QuestionnaireButtons } from './Buttons'
@@ -85,6 +85,17 @@ export const QuestionnaireView: FC = () => {
   const showResult = useComputed(() => !!result.value && hasReviewed.value)
   const showSteps = useComputed(() => !showReviewStep.value && !showResult.value)
   const showButtons = useComputed(() => isActive.value && !showResult.value)
+  const viewStats = useComputed(() =>
+    tracker.eventsDistribution.value?.types
+      .find((it) => it.type === 'View')
+      ?.names.reduce(
+        (result, name) => {
+          result[name.name as 'home' | 'questionnaire' | 'result'] = name
+          return result
+        },
+        {} as Record<'home' | 'questionnaire' | 'result', TrackerEventsDistributionTypeName>,
+      ),
+  )
   const resultStats = useComputed(() =>
     result.value && tracker.eventsDistribution.value
       ? getQuestionnaireResultStats(result.value, tracker.eventsDistribution.value)
@@ -160,6 +171,21 @@ export const QuestionnaireView: FC = () => {
     } else {
       tracker.sendEvents({ type: 'View', name: 'questionnaire' })
     }
+  })
+
+  useSignalEffect(() => {
+    if (!viewStats.value) {
+      return
+    }
+
+    const percentageCompleted = ((viewStats.value.result.total / viewStats.value.questionnaire.total) * 100).toFixed(0)
+
+    document.getElementById('views-container')?.append(
+      t('welcome.views', {
+        total: viewStats.value.questionnaire.total.toLocaleString(),
+        completed: percentageCompleted,
+      }),
+    )
   })
 
   useEffect(() => {

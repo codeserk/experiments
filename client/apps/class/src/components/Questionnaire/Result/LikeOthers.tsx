@@ -13,7 +13,10 @@ export const QuestionnaireResultLikeOthersView: FC<Props> = ({ distribution }) =
     <Container>
       <Trans
         i18nKey="questionnaire.result.likeOthers"
-        values={{ total: distribution?.total ?? 0, percentage: ((distribution?.percentage ?? 0) * 100).toFixed(0) }}
+        values={{
+          total: (distribution?.total ?? 0).toLocaleString(),
+          percentage: ((distribution?.percentage ?? 0) * 100).toFixed(0),
+        }}
         components={{
           total: <span className="total" />,
           percentage: (
@@ -33,7 +36,7 @@ export const QuestionnaireResultLikeOthersView: FC<Props> = ({ distribution }) =
 // Styles
 
 const Container = styled.span`
-  font-size: 1em;
+  font-size: 1.2em;
   text-align: right;
   float: right;
   font-weight: 400;
@@ -50,7 +53,7 @@ const Container = styled.span`
     text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.9);
 
     &.high {
-      color: var(--color-green);
+      color: var(--color-blue);
     }
     &.low {
       color: var(--color-pink);

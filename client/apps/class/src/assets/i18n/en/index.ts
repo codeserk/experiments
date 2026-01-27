@@ -25,6 +25,7 @@ import {
 
 export const enTranslations = {
   welcome: {
+    views: '{{ total }} participants ({{ completed }}% completed).',
     title: "What's Your Social Class?",
     subtitle: 'A quick survey to understand your place in society',
     start: 'Start Now',
@@ -473,8 +474,8 @@ export const enTranslations = {
 
         rate: {
           title: 'Do you agree with the results?',
-          like: 'Yes',
-          dislike: 'No',
+          like: 'Agree',
+          dislike: 'Disagree',
         },
         share: 'Share',
       },

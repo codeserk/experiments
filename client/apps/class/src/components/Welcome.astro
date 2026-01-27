@@ -4,22 +4,27 @@ import { t } from '../util/astro-i18n'
 ---
 
 <div class="welcome-container">
+  <aside class="header">
+    <span id="views-container"></span>
+  </aside>
+
   <div class="content">
     <h1>{t('welcome.title')}</h1>
-    <p>{t('welcome.subtitle')}</p>
+    <h2>{t('welcome.subtitle')}</h2>
 
-    <Button client:load id="start-button" size="big" rounded confetti>{t('welcome.start')}</Button>
+    <div class="button-container">
+      <Button client:load id="start-button" size="big" rounded confetti>{t('welcome.start')}</Button>
+    </div>
   </div>
 
-  <aside>
+  <footer>
     <p>{t('welcome.aside')}<a href="https://www.codeserk.es">@codeserk</a></p>
-  </aside>
+  </footer>
 </div>
 
 <style>
   .welcome-container {
     text-align: center;
-    max-width: var(--block-width);
     padding: 12px 24px;
     margin: 0 auto;
     min-height: 100vh;
@@ -29,26 +34,30 @@ import { t } from '../util/astro-i18n'
     justify-content: center;
     transition: max-height 1s ease-in-out;
 
+    .header {
+      min-height: 40px;
+    }
+
     &.started {
       max-height: 0;
 
       h1 {
         opacity: 0;
       }
-      p {
+      h2 {
         opacity: 0;
       }
       #start-button {
         opacity: 0;
       }
-      aside {
+      footer {
         transform: translate3d(0, 100%, 0);
         opacity: 0;
       }
     }
 
     h1 {
-      font-size: 6em;
+      font-size: 5em;
       color: #000;
       text-transform: uppercase;
       margin-bottom: 16px;
@@ -57,16 +66,18 @@ import { t } from '../util/astro-i18n'
       font-family: var(--font-title);
       letter-spacing: -2px;
       transition: all 0.4s ease-in-out;
+      max-width: 800px;
     }
 
-    p {
+    h2 {
       font-size: 2em;
       color: #000;
-      margin-bottom: 40px;
+      margin-bottom: 2em;
       font-family: var(--font-body);
       text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.9);
       font-weight: 700;
       letter-spacing: 1px;
+      max-width: var(--block-width);
       transition: all 0.4s ease-in-out;
       transition-delay: 0.1s;
     }
@@ -82,10 +93,11 @@ import { t } from '../util/astro-i18n'
         background: var(--color-pink);
         color: white;
         transition: opacity 0.4s ease-in-out;
+        animation: pulse 1s ease-in-out infinite;
       }
     }
 
-    aside {
+    footer {
       transition: all 0.4s ease-in-out;
       transition-delay: 0.2s;
 
@@ -93,6 +105,16 @@ import { t } from '../util/astro-i18n'
         font-size: 1em;
         margin: 0;
       }
+    }
+  }
+
+  @keyframes pulse {
+    0%,
+    100% {
+      filter: brightness(1) saturate(1);
+    }
+    50% {
+      filter: brightness(1.2) saturate(1.2);
     }
   }
 </style>

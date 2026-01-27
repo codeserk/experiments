@@ -86,6 +86,7 @@ export function useTrackerStore() {
       'HealthcareDebtRisk',
       'IsParasite',
       'Rate',
+      'View',
     ]
     const params = new URLSearchParams()
     for (const type of types) {
