@@ -36,6 +36,9 @@ import { t } from '../util/astro-i18n'
 
     .header {
       min-height: 40px;
+      font-size: 1.2em;
+      transition: all 0.4s ease-in-out;
+      transition-delay: 0.2s;
     }
 
     &.started {
@@ -50,6 +53,10 @@ import { t } from '../util/astro-i18n'
       #start-button {
         opacity: 0;
       }
+      .header {
+        transform: translate3d(0, -100%, 0);
+        opacity: 0;
+      }
       footer {
         transform: translate3d(0, 100%, 0);
         opacity: 0;
@@ -57,7 +64,7 @@ import { t } from '../util/astro-i18n'
     }
 
     h1 {
-      font-size: 5em;
+      font-size: 6em;
       color: #000;
       text-transform: uppercase;
       margin-bottom: 16px;
