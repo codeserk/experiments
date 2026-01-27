@@ -89,7 +89,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 3em;
+  gap: 1em;
   max-width: 90vw;
 
   @keyframes bounce {
@@ -131,8 +131,11 @@ const Container = styled.div`
     &.positive,
     &.negative {
       .buttons .button {
+        justify-content: space-between;
         width: 250px;
+
         span {
+          display: block;
           opacity: 1;
         }
       }
@@ -148,7 +151,7 @@ const Container = styled.div`
         transition: opacity 0.4s ease-in-out;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         width: 150px;
         max-width: 40vw;
         transition: width 0.4s ease-in-out;
@@ -156,8 +159,15 @@ const Container = styled.div`
         span {
           transition: opacity 0.4s ease-in-out;
           opacity: 0;
+          display: none;
         }
       }
+    }
+  }
+
+  .share-container {
+    .button {
+      width: 150px;
     }
   }
 

@@ -50,13 +50,13 @@ const Container = styled.span`
   .percentage {
     font-weight: bold;
     color: var(--color-purple);
-    text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.9);
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.9);
 
     &.high {
       color: var(--color-blue);
     }
     &.low {
-      color: var(--color-pink);
+      color: var(--color-red);
     }
   }
 `

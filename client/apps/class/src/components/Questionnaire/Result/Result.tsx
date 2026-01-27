@@ -306,6 +306,7 @@ const Container = styled.div`
     gap: 0px;
     align-items: center;
     margin-bottom: 1em;
+    margin-top: 1em;
   }
 
   .scroll-indicator {

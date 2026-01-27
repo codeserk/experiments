@@ -51,7 +51,7 @@ a:active {
     padding: 16px 32px;
   }
   &.size-small {
-    font-size: 1em !important;
+    font-size: 1.4em !important;
     padding: 6px 12px !important;
     box-shadow: 3px 3px 0 #000 !important;
     border: 2px solid #000 !important;

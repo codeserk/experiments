@@ -325,8 +325,8 @@ export const enTranslations = {
     },
 
     buttons: {
-      prev: 'Prev',
-      next: 'Next',
+      prev: 'Back',
+      next: 'Continue',
       skip: 'Skip',
       finish: 'Finish',
     },
