@@ -20,8 +20,8 @@ export const QuestionnaireSummaryView: FC = () => {
   const showAlert = useSignal(false)
 
   const shareContent = useComputed<ShareData>(() => ({
-    title: '...',
-    text: 'share share',
+    title: t('questionnaire.result.summary.share.title'),
+    text: t('questionnaire.result.summary.share.text'),
     url: 'https://experiments.codeserk.es/class',
   }))
   const canShare = useComputed(() => !!navigator.share && navigator.canShare(shareContent.value))
@@ -73,9 +73,9 @@ export const QuestionnaireSummaryView: FC = () => {
 
       <div className="share-container">
         <Button rounded className="color-yellow" onClick={share}>
-          {t('questionnaire.result.summary.share')}
+          {t('questionnaire.result.summary.share.cta')}
         </Button>
-        {showAlert.value && <div className="alert">Link copied to clipboard!</div>}
+        {showAlert.value && <div className="alert">{t('questionnaire.result.summary.share.linkCopied')}</div>}
       </div>
     </Container>
   )
@@ -152,7 +152,7 @@ const Container = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 150px;
+        min-width: 200px;
         max-width: 40vw;
         transition: width 0.4s ease-in-out;
 

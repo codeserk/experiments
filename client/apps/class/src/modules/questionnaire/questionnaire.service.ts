@@ -269,6 +269,9 @@ export function getQuestionnairePrevStep(questionnaire: ActiveQuestionnaire, ind
   if (index <= 0) {
     return 0
   }
+  if (index >= QUESTIONNAIRE_STEPS.length) {
+    return QUESTIONNAIRE_STEPS.length - 1
+  }
 
   const prevStep = QUESTIONNAIRE_STEPS[index - 1]
   if (
@@ -282,8 +285,8 @@ export function getQuestionnairePrevStep(questionnaire: ActiveQuestionnaire, ind
 }
 
 export function getQuestionnaireNextStep(questionnaire: ActiveQuestionnaire, index: number): number {
-  if (index >= QUESTIONNAIRE_STEPS.length - 1) {
-    return QUESTIONNAIRE_STEPS.length - 1
+  if (index >= QUESTIONNAIRE_STEPS.length) {
+    return QUESTIONNAIRE_STEPS.length
   }
 
   const nextStep = QUESTIONNAIRE_STEPS[index + 1]
@@ -298,6 +301,10 @@ export function getQuestionnaireNextStep(questionnaire: ActiveQuestionnaire, ind
 }
 
 export function getQuestionnaireStepHasValue(questionnaire: ActiveQuestionnaire, step: QuestionnaireStep): boolean {
+  if (!step) {
+    return false
+  }
+
   const [f1, f2, f3] = QUESTIONNAIRE_STEP_FIELDS[step]
   if (f1 === 'profile') {
     return !!questionnaire.profile[f2]

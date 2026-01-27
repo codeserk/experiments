@@ -40,6 +40,9 @@ export const QuestionnaireResultView: FC<Props> = ({ result, stats }) => {
       setTimeout(() => {
         window.scrollTo({ top: 0, behavior: 'instant' })
       }, 100)
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: 'instant' })
+      }, 400)
     }
   }, [result.value])
 

@@ -477,7 +477,12 @@ export const enTranslations = {
           like: 'Agree',
           dislike: 'Disagree',
         },
-        share: 'Share',
+        share: {
+          cta: 'Share',
+          title: '',
+          text: '',
+          linkCopied: 'Link copied to clipboard!',
+        },
       },
     },
   },

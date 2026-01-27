@@ -81,7 +81,7 @@ export const QuestionnaireView: FC = () => {
   const result = useComputed(() => calculateQuestionnaireResult(countryCode.value, questionnaire.value))
   const showReviewStep = useComputed(
     () =>
-      stepIndex.value === QUESTIONNAIRE_STEPS.length - 1 &&
+      stepIndex.value === QUESTIONNAIRE_STEPS.length &&
       !!visitedStepsMap.value[QuestionnaireStep.PassiveIncome] &&
       !!result.value &&
       !hasReviewed.value,
