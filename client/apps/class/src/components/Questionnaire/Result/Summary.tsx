@@ -152,7 +152,7 @@ const Container = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-        min-width: 200px;
+        width: 200px;
         max-width: 40vw;
         transition: width 0.4s ease-in-out;
 
