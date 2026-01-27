@@ -337,6 +337,7 @@ export const enTranslations = {
     },
 
     result: {
+      likeOthers: 'Like other <total>{{ total }}</total> people (<percentage>{{ percentage }}%</percentage>)',
       socialClass: {
         [SocialClass.WorkingClass]: {
           title: 'You are... <br/><red>Working Class</red>',
@@ -459,11 +460,16 @@ export const enTranslations = {
       worker: {
         title: "You're <blue>not so different</blue> after all",
         subtitle:
-          'Despite all your differences with the rest, you share one fundamental truth with <em>99% of humanity</em>.<br/><strong>You must work to survive.</strong><br/><em>Unite with those who share this reality. Together, we have the power to demand better.</em>',
+          'Despite all your differences with the rest, you share one fundamental truth with <em>99% of humanity</em>.<br/><strong>You must work to survive.</strong>',
       },
       scrollForMore: 'Scroll for more...',
       summary: {
-        title: '',
+        title: 'Thanks for your precious time',
+        subtitle: 'You are not alone. <strong>Together, we have the power to demand better.</strong>',
+
+        [`title_${SocialClass.OwnerClass}`]: 'Enjoy it <em>while it lasts</em>',
+        [`subtitle_${SocialClass.OwnerClass}`]:
+          'Every empire built on the backs of others <strong>eventually falls.</strong>',
 
         rate: {
           title: 'Do you agree with the results?',

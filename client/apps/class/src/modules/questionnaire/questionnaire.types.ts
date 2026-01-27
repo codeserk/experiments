@@ -1,5 +1,7 @@
 // Profile
 
+import type { TrackerEventsDistributionTypeName } from '../tracker/tracker.types'
+
 export enum AgeRange {
   Under18 = 'under-18',
   Age18To24 = '18-24',
@@ -87,20 +89,15 @@ export enum PoliticalAuthorityView {
   StrongCentralAuthority = 'strong-central-authority',
 }
 
-export interface PoliticalView {
-  readonly economic: number
-  readonly authority: number
-}
-
 export interface QuestionnaireProfile {
-  ageRange: AgeRange
-  gender: Gender
-  ethnicity: Ethnicity
-  religion: Religion
-  education: Education
-  immigrationStatus: ImmigrationStatus
-  politicalEconomicView: PoliticalEconomicView
-  politicalAuthorityView: PoliticalAuthorityView
+  ageRange?: AgeRange
+  gender?: Gender
+  ethnicity?: Ethnicity
+  religion?: Religion
+  education?: Education
+  immigrationStatus?: ImmigrationStatus
+  politicalEconomicView?: PoliticalEconomicView
+  politicalAuthorityView?: PoliticalAuthorityView
 }
 
 // Answers
@@ -327,3 +324,12 @@ export type QuestionnaireField =
   | ['profile', keyof QuestionnaireProfile]
   | ['answers', Exclude<keyof QuestionnaireAnswers, 'house'>]
   | ['answers', 'house', keyof QuestionnaireHouseSituation]
+
+export type QuestionnaireResultStats = Record<
+  keyof QuestionnaireProfile,
+  TrackerEventsDistributionTypeName | undefined
+> &
+  Record<
+    keyof Omit<QuestionnaireResult, 'questionnaire' | 'monthsUntilHomeless' | 'healthcareDebtRiskPercentage'>,
+    TrackerEventsDistributionTypeName | undefined
+  >

@@ -1,19 +1,20 @@
+import { useComputed, useSignal } from '@preact/signals'
 import type { FC } from 'preact/compat'
+import { useTranslation } from 'react-i18next'
 import styled from 'styled-components'
 import { Button } from '../../Button'
-import { useComputed, useSignal } from '@preact/signals'
-import { useTranslation } from 'react-i18next'
-import { classes } from '../../../util/style'
+import { useTrackerStoreContext } from '../../../modules/tracker/tracker.store'
+import { QuestionnaireResultLikeOthersPercentageView } from './LikeOthersPercentage'
 
 enum RateResult {
   Positive = 'positive',
   Negative = 'negative',
 }
 
-interface Props {}
-
-export const QuestionnaireSummaryView: FC<Props> = () => {
+export const QuestionnaireSummaryView: FC = () => {
   const { t } = useTranslation()
+  const { sendEvents } = useTrackerStoreContext()
+  const { rateDistribution } = useTrackerStoreContext()
 
   const rateResult = useSignal<RateResult | undefined>(undefined)
   const showAlert = useSignal(false)
@@ -31,6 +32,8 @@ export const QuestionnaireSummaryView: FC<Props> = () => {
     }
 
     rateResult.value = result
+
+    sendEvents({ type: 'Rate', name: rateResult.value })
   }
 
   const share = () => {
@@ -55,6 +58,7 @@ export const QuestionnaireSummaryView: FC<Props> = () => {
             disabled={!!rateResult.value}
             onClick={() => rate(RateResult.Positive)}>
             {t('questionnaire.result.summary.rate.like')}
+            <QuestionnaireResultLikeOthersPercentageView percentage={rateDistribution.value?.positive?.percentage} />
           </Button>
           <Button
             rounded
@@ -63,6 +67,7 @@ export const QuestionnaireSummaryView: FC<Props> = () => {
             disabled={!!rateResult.value}
             onClick={() => rate(RateResult.Negative)}>
             {t('questionnaire.result.summary.rate.dislike')}
+            <QuestionnaireResultLikeOthersPercentageView percentage={rateDistribution.value?.negative?.percentage} />
           </Button>
         </div>
       </div>
@@ -100,8 +105,10 @@ const Container = styled.div`
 
   .rate-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    gap: 2em;
 
     &.positive {
       .rate-positive {
@@ -120,9 +127,35 @@ const Container = styled.div`
       }
     }
 
-    .button {
-      transition: opacity 0.4s ease-in-out;
-      width: 250px;
+    &.positive,
+    &.negative {
+      .buttons .button {
+        width: 250px;
+        span {
+          opacity: 1;
+        }
+      }
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      .button {
+        transition: opacity 0.4s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 150px;
+        transition: width 0.4s ease-in-out;
+
+        span {
+          transition: opacity 0.4s ease-in-out;
+          opacity: 0;
+        }
+      }
     }
   }
 

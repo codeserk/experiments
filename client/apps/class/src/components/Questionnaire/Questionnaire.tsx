@@ -8,29 +8,12 @@ import {
   calculateQuestionnaireResult,
   getQuestionnaireCanContinue,
   getQuestionnaireNextStep,
+  getQuestionnaireResultStats,
   getQuestionnaireStepHasValue,
 } from '../../modules/questionnaire/questionnaire.service'
-import {
-  AgeRange,
-  DebtLevel,
-  Education,
-  Ethnicity,
-  Gender,
-  HealthInsurance,
-  HouseProperty,
-  HousePropertyCost,
-  ImmigrationStatus,
-  InvestmentArea,
-  MonthlyIncome,
-  PassiveIncome,
-  PoliticalAuthorityView,
-  PoliticalEconomicView,
-  QuestionnaireStep,
-  Religion,
-  SavingsLevel,
-  WorkingArea,
-  type ActiveQuestionnaire,
-} from '../../modules/questionnaire/questionnaire.types'
+import { QuestionnaireStep, type ActiveQuestionnaire } from '../../modules/questionnaire/questionnaire.types'
+import { TrackerStoreContext, useTrackerStore } from '../../modules/tracker/tracker.store'
+import type { TrackerEventContent } from '../../modules/tracker/tracker.types'
 import { classes } from '../../util/style'
 import { View } from '../View'
 import { QuestionnaireButtons } from './Buttons'
@@ -58,39 +41,40 @@ import { QuestionnaireStepContainer } from './StepContainer'
 
 export const QuestionnaireView: FC = () => {
   const { t } = useTranslation()
+  const tracker = useTrackerStore()
 
   const isActive = useSignal(false)
   const visitedStepsMap = useSignal<Partial<Record<QuestionnaireStep, true>>>({})
   const isTransitioning = useSignal(false)
-  const stepIndex = useSignal(16)
+  const stepIndex = useSignal(0)
   const hasReviewed = useSignal(false)
   const questionnaire = useSignal<ActiveQuestionnaire>({
     profile: {
-      ageRange: AgeRange.Age18To24,
-      gender: Gender.Man,
-      ethnicity: Ethnicity.WhiteCaucasian,
-      religion: Religion.Agnostic,
-      education: Education.BachelorsDegree,
-      immigrationStatus: ImmigrationStatus.BornInCurrentCountry,
-      politicalEconomicView: PoliticalEconomicView.MixedEconomy,
-      politicalAuthorityView: PoliticalAuthorityView.BalancedGovernance,
+      // ageRange: AgeRange.Age18To24,
+      // gender: Gender.Man,
+      // ethnicity: Ethnicity.WhiteCaucasian,
+      // religion: Religion.Agnostic,
+      // education: Education.BachelorsDegree,
+      // immigrationStatus: ImmigrationStatus.BornInCurrentCountry,
+      // politicalEconomicView: PoliticalEconomicView.MixedEconomy,
+      // politicalAuthorityView: PoliticalAuthorityView.BalancedGovernance,
     },
     answers: {
-      workingArea: WorkingArea.Engineering,
-      monthlyIncome: MonthlyIncome.Income3000To5000,
-      debtLevel: DebtLevel.NoDebt,
-      savingsLevel: SavingsLevel.Savings50000To100000,
-      healthInsurance: HealthInsurance.EmployerProvided,
-      investments: [InvestmentArea.Stocks, InvestmentArea.Cryptocurrency],
-      passiveIncome: PassiveIncome.Under500,
-      house: {
-        property: HouseProperty.Renting,
-        monthlyCost: HousePropertyCost.Normal,
-      },
+      // workingArea: WorkingArea.Engineering,
+      // monthlyIncome: MonthlyIncome.Income3000To5000,
+      // debtLevel: DebtLevel.NoDebt,
+      // savingsLevel: SavingsLevel.Savings50000To100000,
+      // healthInsurance: HealthInsurance.EmployerProvided,
+      // investments: [InvestmentArea.Stocks, InvestmentArea.Cryptocurrency],
+      // passiveIncome: PassiveIncome.Under500,
+      // house: {
+      //   property: HouseProperty.Renting,
+      //   monthlyCost: HousePropertyCost.Normal,
+      // },
     },
   })
-  const countryCode = useSignal('ES')
 
+  const countryCode = useComputed(() => tracker.identity.value?.country ?? 'ES')
   const hasValue = useComputed(() => getQuestionnaireStepHasValue(questionnaire.value, step.value))
   const canContinue = useComputed(() => getQuestionnaireCanContinue(questionnaire.value, step.value))
   const step = useComputed(() => QUESTIONNAIRE_STEPS[stepIndex.value])
@@ -101,6 +85,11 @@ export const QuestionnaireView: FC = () => {
   const showResult = useComputed(() => !!result.value && hasReviewed.value)
   const showSteps = useComputed(() => !showReviewStep.value && !showResult.value)
   const showButtons = useComputed(() => isActive.value && !showResult.value)
+  const resultStats = useComputed(() =>
+    result.value && tracker.eventsDistribution.value
+      ? getQuestionnaireResultStats(result.value, tracker.eventsDistribution.value)
+      : undefined,
+  )
 
   useSignalEffect(() => {
     if (!QUESTIONNAIRE_AUTO_CONTINUE_STEPS.includes(step.value)) {
@@ -132,6 +121,47 @@ export const QuestionnaireView: FC = () => {
     }
   })
 
+  useSignalEffect(() => {
+    if (tracker.isReady.value) {
+      tracker.identify()
+      tracker.sendEvents({ type: 'View', name: 'home' })
+      tracker.getEventsGlobalDistribution()
+    }
+  })
+
+  useSignalEffect(() => {
+    if (!tracker.isReady.value || !isActive.value) {
+      return
+    }
+
+    const r = result.peek()
+    if (showResult.value && r) {
+      const content: TrackerEventContent[] = [
+        { type: 'View', name: 'result' },
+        // Profile
+        { type: 'Age', name: r.questionnaire.profile.ageRange ?? 'skip' },
+        { type: 'Gender', name: r.questionnaire.profile.gender ?? 'skip' },
+        { type: 'Ethnicity', name: r.questionnaire.profile.ethnicity ?? 'skip' },
+        { type: 'Religion', name: r.questionnaire.profile.religion ?? 'skip' },
+        { type: 'Education', name: r.questionnaire.profile.education ?? 'skip' },
+        { type: 'ImmigrationStatus', name: r.questionnaire.profile.immigrationStatus ?? 'skip' },
+        { type: 'PoliticalEconomicView', name: r.questionnaire.profile.politicalEconomicView ?? 'skip' },
+        { type: 'PoliticalAuthorityView', name: r.questionnaire.profile.politicalAuthorityView ?? 'skip' },
+        // Result
+        { type: 'SocialClass', name: r.socialClass },
+        { type: 'LivingQuality', name: r.livingQuality },
+        { type: 'FinancialSecurity', name: r.financialSecurity },
+        { type: 'LosingJobRisk', name: r.losingJobRisk > 0.4 ? 'Yes' : 'No' },
+        { type: 'HealthcareDebtRisk', name: r.healthcareDebtRisk },
+        { type: 'IsParasite', name: r.isParasite ? 'Yes' : 'No' },
+      ]
+
+      tracker.sendEvents(...content)
+    } else {
+      tracker.sendEvents({ type: 'View', name: 'questionnaire' })
+    }
+  })
+
   useEffect(() => {
     const handleStart = () => {
       isActive.value = true
@@ -145,108 +175,116 @@ export const QuestionnaireView: FC = () => {
   }, [])
 
   return (
-    <Container className={classes({ transitioning: isTransitioning.value, active: isActive.value }, 'questionnaire')}>
-      <QuestionnaireProgressBar isActive={showButtons} stepIndex={stepIndex} />
+    <TrackerStoreContext.Provider value={tracker}>
+      <Container className={classes({ transitioning: isTransitioning.value, active: isActive.value }, 'questionnaire')}>
+        <QuestionnaireProgressBar isActive={showButtons} stepIndex={stepIndex} />
 
-      <View isActive={isActive}>
-        <View isActive={showSteps}>
-          <div className="header">
-            <h1>{t(`questionnaire.steps.${step.value}.title`)}</h1>
-            <h2>{t(`questionnaire.steps.${step.value}.subtitle`)}</h2>
-          </div>
+        <View isActive={isActive}>
+          <View isActive={showSteps}>
+            <div className="header">
+              <h1>{t(`questionnaire.steps.${step.value}.title`)}</h1>
+              <h2>{t(`questionnaire.steps.${step.value}.subtitle`)}</h2>
+            </div>
+          </View>
+
+          <View isActive={showSteps}>
+            <div className="steps">
+              <QuestionnaireStepContainer step={step} activeStep="age">
+                <QuestionnaireAgeStepView isDisabled={isTransitioning} questionnaire={questionnaire} />
+              </QuestionnaireStepContainer>
+
+              <QuestionnaireStepContainer step={step} activeStep="gender">
+                <QuestionnaireGenderStepView isDisabled={isTransitioning} questionnaire={questionnaire} />
+              </QuestionnaireStepContainer>
+
+              <QuestionnaireStepContainer step={step} activeStep="ethnicity">
+                <QuestionnaireEthnicityStepView isDisabled={isTransitioning} questionnaire={questionnaire} />
+              </QuestionnaireStepContainer>
+
+              <QuestionnaireStepContainer step={step} activeStep="religion">
+                <QuestionnaireReligionStepView isDisabled={isTransitioning} questionnaire={questionnaire} />
+              </QuestionnaireStepContainer>
+
+              <QuestionnaireStepContainer step={step} activeStep="immigration-status">
+                <QuestionnaireImmigrationStatusStepView isDisabled={isTransitioning} questionnaire={questionnaire} />
+              </QuestionnaireStepContainer>
+
+              <QuestionnaireStepContainer step={step} activeStep="education">
+                <QuestionnaireEducationStepView isDisabled={isTransitioning} questionnaire={questionnaire} />
+              </QuestionnaireStepContainer>
+
+              <QuestionnaireStepContainer step={step} activeStep="political-economic-view">
+                <QuestionnairePoliticalEconomicViewStepView
+                  isDisabled={isTransitioning}
+                  questionnaire={questionnaire}
+                />
+              </QuestionnaireStepContainer>
+
+              <QuestionnaireStepContainer step={step} activeStep="political-authority-view">
+                <QuestionnairePoliticalAuthorityViewStepView
+                  isDisabled={isTransitioning}
+                  questionnaire={questionnaire}
+                />
+              </QuestionnaireStepContainer>
+
+              <QuestionnaireStepContainer step={step} activeStep="working-area">
+                <QuestionnaireWorkingAreaStepView isDisabled={isTransitioning} questionnaire={questionnaire} />
+              </QuestionnaireStepContainer>
+
+              <QuestionnaireStepContainer step={step} activeStep="monthly-income">
+                <QuestionnaireMonthlyIncomeStepView isDisabled={isTransitioning} questionnaire={questionnaire} />
+              </QuestionnaireStepContainer>
+
+              <QuestionnaireStepContainer step={step} activeStep="savings-level">
+                <QuestionnaireSavingsLevelStepView isDisabled={isTransitioning} questionnaire={questionnaire} />
+              </QuestionnaireStepContainer>
+
+              <QuestionnaireStepContainer step={step} activeStep="house-property">
+                <QuestionnaireHousePropertyStepView isDisabled={isTransitioning} questionnaire={questionnaire} />
+              </QuestionnaireStepContainer>
+
+              <QuestionnaireStepContainer step={step} activeStep="house-cost">
+                <QuestionnaireHousePropertyCostStepView isDisabled={isTransitioning} questionnaire={questionnaire} />
+              </QuestionnaireStepContainer>
+
+              <QuestionnaireStepContainer step={step} activeStep="debt-level">
+                <QuestionnaireDebtLevelStepView isDisabled={isTransitioning} questionnaire={questionnaire} />
+              </QuestionnaireStepContainer>
+
+              <QuestionnaireStepContainer step={step} activeStep="health-insurance">
+                <QuestionnaireHealthInsuranceStepView isDisabled={isTransitioning} questionnaire={questionnaire} />
+              </QuestionnaireStepContainer>
+
+              <QuestionnaireStepContainer step={step} activeStep="investment-areas">
+                <QuestionnaireInvestmentAreasStepView isDisabled={isTransitioning} questionnaire={questionnaire} />
+              </QuestionnaireStepContainer>
+
+              <QuestionnaireStepContainer step={step} activeStep="passive-income">
+                <QuestionnairePassiveIncomeStepView isDisabled={isTransitioning} questionnaire={questionnaire} />
+              </QuestionnaireStepContainer>
+            </div>
+          </View>
+
+          <View isActive={showReviewStep}>
+            <QuestionnaireReviewView />
+          </View>
+
+          <View isActive={showResult}>
+            <QuestionnaireResultView result={result} stats={resultStats} />
+          </View>
         </View>
 
-        <View isActive={showSteps}>
-          <div className="steps">
-            <QuestionnaireStepContainer step={step} activeStep="age">
-              <QuestionnaireAgeStepView isDisabled={isTransitioning} questionnaire={questionnaire} />
-            </QuestionnaireStepContainer>
-
-            <QuestionnaireStepContainer step={step} activeStep="gender">
-              <QuestionnaireGenderStepView isDisabled={isTransitioning} questionnaire={questionnaire} />
-            </QuestionnaireStepContainer>
-
-            <QuestionnaireStepContainer step={step} activeStep="ethnicity">
-              <QuestionnaireEthnicityStepView isDisabled={isTransitioning} questionnaire={questionnaire} />
-            </QuestionnaireStepContainer>
-
-            <QuestionnaireStepContainer step={step} activeStep="religion">
-              <QuestionnaireReligionStepView isDisabled={isTransitioning} questionnaire={questionnaire} />
-            </QuestionnaireStepContainer>
-
-            <QuestionnaireStepContainer step={step} activeStep="immigration-status">
-              <QuestionnaireImmigrationStatusStepView isDisabled={isTransitioning} questionnaire={questionnaire} />
-            </QuestionnaireStepContainer>
-
-            <QuestionnaireStepContainer step={step} activeStep="education">
-              <QuestionnaireEducationStepView isDisabled={isTransitioning} questionnaire={questionnaire} />
-            </QuestionnaireStepContainer>
-
-            <QuestionnaireStepContainer step={step} activeStep="political-economic-view">
-              <QuestionnairePoliticalEconomicViewStepView isDisabled={isTransitioning} questionnaire={questionnaire} />
-            </QuestionnaireStepContainer>
-
-            <QuestionnaireStepContainer step={step} activeStep="political-authority-view">
-              <QuestionnairePoliticalAuthorityViewStepView isDisabled={isTransitioning} questionnaire={questionnaire} />
-            </QuestionnaireStepContainer>
-
-            <QuestionnaireStepContainer step={step} activeStep="working-area">
-              <QuestionnaireWorkingAreaStepView isDisabled={isTransitioning} questionnaire={questionnaire} />
-            </QuestionnaireStepContainer>
-
-            <QuestionnaireStepContainer step={step} activeStep="monthly-income">
-              <QuestionnaireMonthlyIncomeStepView isDisabled={isTransitioning} questionnaire={questionnaire} />
-            </QuestionnaireStepContainer>
-
-            <QuestionnaireStepContainer step={step} activeStep="savings-level">
-              <QuestionnaireSavingsLevelStepView isDisabled={isTransitioning} questionnaire={questionnaire} />
-            </QuestionnaireStepContainer>
-
-            <QuestionnaireStepContainer step={step} activeStep="house-property">
-              <QuestionnaireHousePropertyStepView isDisabled={isTransitioning} questionnaire={questionnaire} />
-            </QuestionnaireStepContainer>
-
-            <QuestionnaireStepContainer step={step} activeStep="house-cost">
-              <QuestionnaireHousePropertyCostStepView isDisabled={isTransitioning} questionnaire={questionnaire} />
-            </QuestionnaireStepContainer>
-
-            <QuestionnaireStepContainer step={step} activeStep="debt-level">
-              <QuestionnaireDebtLevelStepView isDisabled={isTransitioning} questionnaire={questionnaire} />
-            </QuestionnaireStepContainer>
-
-            <QuestionnaireStepContainer step={step} activeStep="health-insurance">
-              <QuestionnaireHealthInsuranceStepView isDisabled={isTransitioning} questionnaire={questionnaire} />
-            </QuestionnaireStepContainer>
-
-            <QuestionnaireStepContainer step={step} activeStep="investment-areas">
-              <QuestionnaireInvestmentAreasStepView isDisabled={isTransitioning} questionnaire={questionnaire} />
-            </QuestionnaireStepContainer>
-
-            <QuestionnaireStepContainer step={step} activeStep="passive-income">
-              <QuestionnairePassiveIncomeStepView isDisabled={isTransitioning} questionnaire={questionnaire} />
-            </QuestionnaireStepContainer>
-          </div>
-        </View>
-
-        <View isActive={showReviewStep}>
-          <QuestionnaireReviewView />
-        </View>
-
-        <View isActive={showResult}>
-          <QuestionnaireResultView result={result} />
-        </View>
-      </View>
-
-      <QuestionnaireButtons
-        isActive={showButtons}
-        isDisabled={isTransitioning}
-        questionnaire={questionnaire}
-        stepIndex={stepIndex}
-        step={step}
-        showReviewStep={showReviewStep}
-        hasReviewed={hasReviewed}
-      />
-    </Container>
+        <QuestionnaireButtons
+          isActive={showButtons}
+          isDisabled={isTransitioning}
+          questionnaire={questionnaire}
+          stepIndex={stepIndex}
+          step={step}
+          showReviewStep={showReviewStep}
+          hasReviewed={hasReviewed}
+        />
+      </Container>
+    </TrackerStoreContext.Provider>
   )
 }
 

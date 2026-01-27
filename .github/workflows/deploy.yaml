@@ -28,6 +28,13 @@ jobs:
           mkdir dist
           echo "Hello" > dist/index.html
 
+      - name: Create .env file
+        working-directory: ./client/apps/class/
+        run: |
+          echo "PUBLIC_TRACKER_PUBLIC_BASE_URL=${{ secrets.PUBLIC_TRACKER_PUBLIC_BASE_URL }}
+          PUBLIC_TRACKER_EVENTS_BASE_URL=${{ secrets.PUBLIC_TRACKER_EVENTS_BASE_URL }}
+          PUBLIC_TRACKER_KEY=${{ secrets.PUBLIC_TRACKER_KEY }}" > .env
+
       - name: Build class
         working-directory: ./client/apps/class/
         run: |

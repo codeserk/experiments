@@ -1,3 +1,4 @@
+import type { TrackerEventsDistribution, TrackerEventsDistributionType } from '../tracker/tracker.types'
 import {
   COST_OF_LIVING_BY_COUNTRY,
   DEBT_LEVEL_MAP,
@@ -35,6 +36,7 @@ import {
   type Questionnaire,
   type QuestionnaireAnswers,
   type QuestionnaireResult,
+  type QuestionnaireResultStats,
 } from './questionnaire.types'
 
 function getCostOfLiving(countryCode: string): CostOfLiving {
@@ -322,4 +324,42 @@ export function getQuestionnaireCanContinue(questionnaire: ActiveQuestionnaire, 
 
 export function getQuestionnaireProgress(stepIndex: number): number {
   return stepIndex / QUESTIONNAIRE_STEPS.length
+}
+
+export function getQuestionnaireResultStats(
+  result: QuestionnaireResult,
+  distribution: TrackerEventsDistribution,
+): QuestionnaireResultStats {
+  const map = distribution.types.reduce(
+    (result, type) => {
+      result[type.type] = type
+      return result
+    },
+    {} as Record<string, TrackerEventsDistributionType>,
+  )
+
+  return {
+    // Profile
+    ageRange: map.Age?.names.find((it) => it.name === (result.questionnaire.profile.ageRange || 'skip')),
+    gender: map.Gender?.names.find((it) => it.name === (result.questionnaire.profile.gender || 'skip')),
+    ethnicity: map.Ethnicity?.names.find((it) => it.name === (result.questionnaire.profile.ethnicity || 'skip')),
+    religion: map.Ethnicity?.names.find((it) => it.name === (result.questionnaire.profile.religion || 'skip')),
+    education: map.Education?.names.find((it) => it.name === (result.questionnaire.profile.education || 'skip')),
+    immigrationStatus: map.ImmigrationStatus?.names.find(
+      (it) => it.name === (result.questionnaire.profile.immigrationStatus || 'skip'),
+    ),
+    politicalEconomicView: map.PoliticalEconomicView?.names.find(
+      (it) => it.name === (result.questionnaire.profile.politicalEconomicView || 'skip'),
+    ),
+    politicalAuthorityView: map.PoliticalAuthorityView?.names.find(
+      (it) => it.name === (result.questionnaire.profile.politicalAuthorityView || 'skip'),
+    ),
+    // Result
+    socialClass: map.SocialClass?.names.find((it) => it.name === result.socialClass),
+    livingQuality: map.LivingQuality?.names.find((it) => it.name === result.livingQuality),
+    financialSecurity: map.FinancialSecurity?.names.find((it) => it.name === result.financialSecurity),
+    losingJobRisk: map.LosingJobRisk?.names.find((it) => it.name === (result.losingJobRisk > 0.4 ? 'Yes' : 'No')),
+    healthcareDebtRisk: map.HealthcareDebtRisk?.names.find((it) => it.name === result.healthcareDebtRisk),
+    isParasite: map.IsParasite?.names.find((it) => it.name === (result.isParasite ? 'Yes' : 'No')),
+  }
 }

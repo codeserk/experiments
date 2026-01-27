@@ -3,13 +3,20 @@ import { useSignal, type ReadonlySignal } from '@preact/signals'
 import { useEffect, type FC } from 'preact/compat'
 import { Trans, useTranslation } from 'react-i18next'
 import styled from 'styled-components'
-import { SocialClass, type QuestionnaireResult } from '../../../modules/questionnaire/questionnaire.types'
+import {
+  SocialClass,
+  type QuestionnaireResult,
+  type QuestionnaireResultStats,
+} from '../../../modules/questionnaire/questionnaire.types'
 import { Button } from '../../Button'
 import { QuestionnaireResultBlock } from './Block'
 import { QuestionnaireSummaryView } from './Summary'
+import { QuestionnaireResultLikeOthersView } from './LikeOthers'
+import { QuestionnaireResultLikeOthersPercentageView } from './LikeOthersPercentage'
 
 interface Props {
   readonly result: ReadonlySignal<QuestionnaireResult | undefined>
+  readonly stats: ReadonlySignal<QuestionnaireResultStats | undefined>
 }
 
 const components = {
@@ -22,7 +29,7 @@ const components = {
   em: <em />,
 }
 
-export const QuestionnaireResultView: FC<Props> = ({ result }) => {
+export const QuestionnaireResultView: FC<Props> = ({ result, stats }) => {
   const { t } = useTranslation()
 
   const isLastVisible = useSignal(false)
@@ -49,6 +56,7 @@ export const QuestionnaireResultView: FC<Props> = ({ result }) => {
             components={components}
           />
         </h1>
+        <QuestionnaireResultLikeOthersView distribution={stats.value?.socialClass} />
         <h2>
           <Trans
             i18nKey={`questionnaire.result.socialClass.${result.value.socialClass}.subtitle`}
@@ -56,7 +64,6 @@ export const QuestionnaireResultView: FC<Props> = ({ result }) => {
           />
         </h2>
       </QuestionnaireResultBlock>
-
       {result.value.socialClass === SocialClass.WorkingClass && (
         <>
           <QuestionnaireResultBlock>
@@ -66,6 +73,7 @@ export const QuestionnaireResultView: FC<Props> = ({ result }) => {
                 components={components}
               />
             </h1>
+            <QuestionnaireResultLikeOthersView distribution={stats.value?.livingQuality} />
             <h2>
               <Trans
                 i18nKey={`questionnaire.result.livingQuality.${result.value.livingQuality}.subtitle`}
@@ -82,6 +90,7 @@ export const QuestionnaireResultView: FC<Props> = ({ result }) => {
                 components={components}
               />
             </h1>
+            <QuestionnaireResultLikeOthersView distribution={stats.value?.financialSecurity} />
             <h2>
               <Trans
                 i18nKey={`questionnaire.result.financialSecurity.${result.value.financialSecurity}.subtitle`}
@@ -100,6 +109,7 @@ export const QuestionnaireResultView: FC<Props> = ({ result }) => {
                   components={components}
                 />
               </h1>
+              <QuestionnaireResultLikeOthersView distribution={stats.value?.losingJobRisk} />
               <h2>
                 <Trans
                   i18nKey={`questionnaire.result.losingJobRisk.subtitle`}
@@ -118,6 +128,7 @@ export const QuestionnaireResultView: FC<Props> = ({ result }) => {
                 components={components}
               />
             </h1>
+            <QuestionnaireResultLikeOthersView distribution={stats.value?.healthcareDebtRisk} />
             <h2>
               <Trans
                 i18nKey={`questionnaire.result.healthcareDebtRisk.${result.value.healthcareDebtRisk}.subtitle`}
@@ -128,18 +139,17 @@ export const QuestionnaireResultView: FC<Props> = ({ result }) => {
           </QuestionnaireResultBlock>
         </>
       )}
-
       {result.value.isParasite && (
         <QuestionnaireResultBlock>
           <h1>
             <Trans i18nKey={`questionnaire.result.parasite.title`} components={components} />
           </h1>
+          <QuestionnaireResultLikeOthersView distribution={stats.value?.isParasite} />
           <h2>
             <Trans i18nKey={`questionnaire.result.parasite.subtitle`} components={components} />
           </h2>
         </QuestionnaireResultBlock>
       )}
-
       {result.value.socialClass === SocialClass.WorkingClass && (
         <QuestionnaireResultBlock>
           <h1>
@@ -149,21 +159,25 @@ export const QuestionnaireResultView: FC<Props> = ({ result }) => {
             {result.value.questionnaire.profile.ageRange && (
               <Button size="small" className={`option age age-${result.value.questionnaire.profile.ageRange}`}>
                 {t(`questionnaire.steps.age.values.${result.value.questionnaire.profile.ageRange}`)}
+                <QuestionnaireResultLikeOthersPercentageView percentage={stats.value?.ageRange?.percentage} />
               </Button>
             )}
             {result.value.questionnaire.profile.gender && (
               <Button size="small" className={`option gender ${result.value.questionnaire.profile.gender}`}>
                 {t(`questionnaire.steps.gender.values.${result.value.questionnaire.profile.gender}`)}
+                <QuestionnaireResultLikeOthersPercentageView percentage={stats.value?.gender?.percentage} />
               </Button>
             )}
             {result.value.questionnaire.profile.ethnicity && (
               <Button size="small" className={`option ethnicity ${result.value.questionnaire.profile.ethnicity}`}>
                 {t(`questionnaire.steps.ethnicity.values.${result.value.questionnaire.profile.ethnicity}`)}
+                <QuestionnaireResultLikeOthersPercentageView percentage={stats.value?.ethnicity?.percentage} />
               </Button>
             )}
             {result.value.questionnaire.profile.religion && (
               <Button size="small" className={`option religion ${result.value.questionnaire.profile.religion}`}>
                 {t(`questionnaire.steps.religion.values.${result.value.questionnaire.profile.religion}`)}
+                <QuestionnaireResultLikeOthersPercentageView percentage={stats.value?.religion?.percentage} />
               </Button>
             )}
             {result.value.questionnaire.profile.immigrationStatus && (
@@ -173,12 +187,14 @@ export const QuestionnaireResultView: FC<Props> = ({ result }) => {
                 {t(
                   `questionnaire.steps.immigration-status.values.${result.value.questionnaire.profile.immigrationStatus}`,
                 )}
+                <QuestionnaireResultLikeOthersPercentageView percentage={stats.value?.immigrationStatus?.percentage} />
               </Button>
             )}
 
             {result.value.questionnaire.profile.education && (
               <Button size="small" className={`option education ${result.value.questionnaire.profile.education}`}>
                 {t(`questionnaire.steps.education.values.${result.value.questionnaire.profile.education}`)}
+                <QuestionnaireResultLikeOthersPercentageView percentage={stats.value?.education?.percentage} />
               </Button>
             )}
             {result.value.questionnaire.profile.politicalEconomicView && (
@@ -188,6 +204,9 @@ export const QuestionnaireResultView: FC<Props> = ({ result }) => {
                 {t(
                   `questionnaire.steps.political-economic-view.values.${result.value.questionnaire.profile.politicalEconomicView}.title`,
                 )}
+                <QuestionnaireResultLikeOthersPercentageView
+                  percentage={stats.value?.politicalEconomicView?.percentage}
+                />
               </Button>
             )}
             {result.value.questionnaire.profile.politicalAuthorityView && (
@@ -197,6 +216,9 @@ export const QuestionnaireResultView: FC<Props> = ({ result }) => {
                 {t(
                   `questionnaire.steps.political-authority-view.values.${result.value.questionnaire.profile.politicalAuthorityView}.title`,
                 )}
+                <QuestionnaireResultLikeOthersPercentageView
+                  percentage={stats.value?.politicalAuthorityView?.percentage}
+                />
               </Button>
             )}
           </div>
@@ -205,11 +227,23 @@ export const QuestionnaireResultView: FC<Props> = ({ result }) => {
           </h2>
         </QuestionnaireResultBlock>
       )}
-
       <QuestionnaireResultBlock onAppear={() => (isLastVisible.value = true)}>
+        <h1>
+          <Trans
+            i18nKey={`questionnaire.result.summary.title`}
+            components={components}
+            context={result.value.socialClass}
+          />
+        </h1>
+        <h2>
+          <Trans
+            i18nKey={`questionnaire.result.summary.subtitle`}
+            components={components}
+            context={result.value.socialClass}
+          />
+        </h2>
         <QuestionnaireSummaryView />
       </QuestionnaireResultBlock>
-
       {!isLastVisible.value ? (
         <span className="scroll-indicator">{t('questionnaire.result.scrollForMore')}</span>
       ) : (
@@ -247,7 +281,7 @@ const Container = styled.div`
     font-weight: 900;
     color: #000;
     text-transform: uppercase;
-    margin-bottom: 24px;
+    margin-bottom: 0;
     line-height: 1;
     letter-spacing: -1px;
     text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.9);
@@ -255,6 +289,7 @@ const Container = styled.div`
 
   h2 {
     font-size: 2em;
+    margin-top: 1em;
     font-weight: 500;
     color: #000;
     text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.9);
