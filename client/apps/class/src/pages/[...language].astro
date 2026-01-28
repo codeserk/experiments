@@ -12,7 +12,7 @@ const { language } = Astro.params
 
 changeLanguage(language ?? 'en')
 
-const canonical = `${import.meta.env.SITE}/${language ?? ''}`
+const canonical = `${import.meta.env.SITE}/class/${language ?? ''}`
 ---
 
 <Layout>
@@ -29,7 +29,7 @@ const canonical = `${import.meta.env.SITE}/${language ?? ''}`
     <meta name="og:title" content={t('seo.title')} />
     <meta name="og:url" content={canonical} />
     <meta name="og:description" content={t('seo.description')} />
-    <meta name="og:image" content={`${import.meta.env.SITE}${t('seo.image')}`} />
+    <meta name="og:image" content={`${import.meta.env.SITE}/class${t('seo.image')}`} />
     <meta name="og:type" content="image/png" />
     <meta name="og:width" content="1024" />
     <meta name="og:height" content="1024" />
@@ -37,7 +37,7 @@ const canonical = `${import.meta.env.SITE}/${language ?? ''}`
     <!-- Twitter -->
     <meta name="twitter:title" content={t('seo.title')} />
     <meta name="twitter:description" content={t('seo.description')} />
-    <meta name="twitter:image" content={`${import.meta.env.SITE}${t('seo.image')}`} />
+    <meta name="twitter:image" content={`${import.meta.env.SITE}/class${t('seo.image')}`} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="codeserk.es" />
     <meta name="twitter:creator" content="@codeserk" />
