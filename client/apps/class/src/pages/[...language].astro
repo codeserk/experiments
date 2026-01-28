@@ -12,7 +12,7 @@ const { language } = Astro.params
 
 changeLanguage(language ?? 'en')
 
-const canonical = `${import.meta.env.SITE}/class/${language ?? ''}`
+const canonical = `${import.meta.env.SITE}/class/${language ? `${language}/` : ''}`
 ---
 
 <Layout>
