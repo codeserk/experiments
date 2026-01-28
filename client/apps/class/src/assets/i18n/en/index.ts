@@ -33,7 +33,7 @@ export const enTranslations = {
     title: "What's your Social Class?",
     description: 'A quick survey to understand your place in society / experiment by codeserk.es',
     keywords: 'social class, experiment, workers, investment, politics',
-    image: '/class/logo.png',
+    image: '/logo.png',
   },
 
   welcome: {
