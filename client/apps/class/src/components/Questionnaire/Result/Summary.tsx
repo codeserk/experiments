@@ -5,6 +5,8 @@ import styled from 'styled-components'
 import { Button } from '../../Button'
 import { useTrackerStoreContext } from '../../../modules/tracker/tracker.store'
 import { QuestionnaireResultLikeOthersPercentageView } from './LikeOthersPercentage'
+import { ThumbsUpIcon } from '../../Icon/ThumbsUp'
+import { ThumbsDownIcon } from '../../Icon/ThumbsDown'
 
 enum RateResult {
   Positive = 'positive',
@@ -56,7 +58,7 @@ export const QuestionnaireSummaryView: FC = () => {
             className="rate-positive color-green"
             disabled={!!rateResult.value}
             onClick={() => rate(RateResult.Positive)}>
-            {t('questionnaire.result.summary.rate.like')}
+            <ThumbsUpIcon size={'2em'} />
             <QuestionnaireResultLikeOthersPercentageView percentage={rateDistribution.value?.positive?.percentage} />
           </Button>
           <Button
@@ -65,7 +67,7 @@ export const QuestionnaireSummaryView: FC = () => {
             className="rate-negative color-red"
             disabled={!!rateResult.value}
             onClick={() => rate(RateResult.Negative)}>
-            {t('questionnaire.result.summary.rate.dislike')}
+            <ThumbsDownIcon size={'2em'} />
             <QuestionnaireResultLikeOthersPercentageView percentage={rateDistribution.value?.negative?.percentage} />
           </Button>
         </div>
@@ -167,7 +169,7 @@ const Container = styled.div`
 
   .share-container {
     .button {
-      width: 150px;
+      width: 250px;
     }
   }
 

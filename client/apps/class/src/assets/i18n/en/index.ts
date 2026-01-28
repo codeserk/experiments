@@ -24,6 +24,11 @@ import {
 } from '../../../modules/questionnaire/questionnaire.types'
 
 export const enTranslations = {
+  language: {
+    en: 'English',
+    es: 'Spanish',
+  },
+
   welcome: {
     views: '{{ total }} participants ({{ completed }}% completed).',
     title: "What's Your Social Class?",
@@ -479,8 +484,8 @@ export const enTranslations = {
         },
         share: {
           cta: 'Share',
-          title: '',
-          text: '',
+          title: "What's Your Social Class?",
+          text: 'I just discovered my social class. Find out yours!',
           linkCopied: 'Link copied to clipboard!',
         },
       },

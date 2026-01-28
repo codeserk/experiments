@@ -43,8 +43,6 @@ const Container = styled.div`
     font-size: 3em;
     font-weight: 700;
     color: #000;
-    line-height: 1.3;
-
     letter-spacing: 0.5px;
     text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.9);
   }

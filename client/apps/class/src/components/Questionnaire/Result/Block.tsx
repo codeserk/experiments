@@ -28,6 +28,8 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   gap: 1em;
+  max-width: var(--block-width);
+  margin: auto;
 
   h1 {
     font-size: 4em;

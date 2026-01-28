@@ -1,10 +1,16 @@
 ---
 import { Button } from './Button'
-import { t } from '../util/astro-i18n'
+import { getCurrentLanguage, t } from '../util/astro-i18n'
+
+const language = getCurrentLanguage()
 ---
 
 <div class="welcome-container">
   <aside class="header">
+    <select id="language-selector">
+      <option value="en" selected={language === 'en'}>{t('language.en')}</option>
+      <option value="es" selected={language === 'es'}>{t('language.es')}</option>
+    </select>
     <span id="views-container"></span>
   </aside>
 
@@ -37,6 +43,10 @@ import { t } from '../util/astro-i18n'
     .header {
       min-height: 40px;
       font-size: 1.2em;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
       transition: all 0.4s ease-in-out;
       transition-delay: 0.2s;
     }
@@ -129,6 +139,11 @@ import { t } from '../util/astro-i18n'
 <script>
   let hasStarted = false
   document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('language-selector')?.addEventListener('change', (ev) => {
+      const target = ev.target as HTMLSelectElement
+      window.location.href = `/class/${target.value}`
+    })
+
     document.getElementById('start-button')?.addEventListener('click', () => {
       if (hasStarted) {
         return

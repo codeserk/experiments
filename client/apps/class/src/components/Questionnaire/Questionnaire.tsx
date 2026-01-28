@@ -39,8 +39,12 @@ import { QuestionnaireSavingsLevelStepView } from './Step/SavingsLevel'
 import { QuestionnaireWorkingAreaStepView } from './Step/WorkingArea'
 import { QuestionnaireStepContainer } from './StepContainer'
 
-export const QuestionnaireView: FC = () => {
-  const { t } = useTranslation()
+interface Props {
+  readonly language: 'en' | 'es'
+}
+
+export const QuestionnaireView: FC<Props> = ({ language }) => {
+  const { t, i18n } = useTranslation()
   const tracker = useTrackerStore()
 
   const isActive = useSignal(false)
@@ -183,8 +187,9 @@ export const QuestionnaireView: FC = () => {
     }
 
     const percentageCompleted = ((viewStats.value.result.total / viewStats.value.questionnaire.total) * 100).toFixed(0)
+    i18n.changeLanguage(language)
 
-    document.getElementById('views-container')?.append(
+    document.getElementById('views-container')?.replaceWith(
       t('welcome.views', {
         total: viewStats.value.questionnaire.total.toLocaleString(),
         completed: percentageCompleted,
@@ -319,7 +324,6 @@ export const QuestionnaireView: FC = () => {
 }
 
 const Container = styled.div`
-  max-width: var(--block-width);
   margin: 0 auto;
 
   &.active .steps {
@@ -336,6 +340,12 @@ const Container = styled.div`
     .header {
       opacity: 0;
     }
+  }
+
+  .header,
+  .steps {
+    margin: auto;
+    max-width: var(--block-width);
   }
 
   .header {
@@ -1267,49 +1277,6 @@ const Container = styled.div`
     &.passive-income.passive-income-10000-plus {
       background: #4a90e2;
       color: #fff;
-    }
-  }
-
-  .result {
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    min-height: 100vh;
-    animation: sectionEnter 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-
-    h1 {
-      font-size: 5em;
-      font-weight: 900;
-      color: #000;
-      text-transform: uppercase;
-      margin-bottom: 12px;
-      line-height: 1;
-      letter-spacing: -1px;
-      text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.9);
-    }
-
-    h2 {
-      font-size: 3em;
-      font-weight: 700;
-      color: #000;
-      line-height: 1.3;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.9);
-    }
-
-    h3 {
-      font-size: 2em;
-      font-weight: 500;
-      color: #000;
-
-      line-height: 1.3;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.9);
     }
   }
 `

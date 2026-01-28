@@ -19,18 +19,21 @@ export const QuestionnairePoliticalEconomicViewStepView: FC<QuestionnaireStepPro
 
   return (
     <div className={classes({ 'has-value': !!value.value }, 'options-grid')}>
-      {Object.values(PoliticalEconomicView).map((view) => (
-        <Button
-          className={classes({ active: view === value.value }, `option political-economic-view ${view}`)}
-          confetti
-          onClick={() => onSubmit(view)}>
-          <div className="button-content">
-            <span className="title">{t(`questionnaire.steps.political-economic-view.values.${view}.title`)}</span>
-            <span className="subtitle">
-              {t(`questionnaire.steps.political-economic-view.values.${view}.description`)}
-            </span>
-          </div>
-        </Button>
+      {Object.values(PoliticalEconomicView).map((view, index) => (
+        <>
+          <Button
+            className={classes({ active: view === value.value }, `option political-economic-view ${view}`)}
+            confetti
+            onClick={() => onSubmit(view)}>
+            <div className="button-content">
+              <span className="title">{t(`questionnaire.steps.political-economic-view.values.${view}.title`)}</span>
+              <span className="subtitle">
+                {t(`questionnaire.steps.political-economic-view.values.${view}.description`)}
+              </span>
+            </div>
+          </Button>
+          {index === 2 && <br />}
+        </>
       ))}
     </div>
   )
