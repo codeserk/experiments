@@ -32,7 +32,7 @@ export const enTranslations = {
   seo: {
     title: "What's your Social Class?",
     description: 'A quick survey to understand your place in society / experiment by codeserk.es',
-    keywords: 'social class, experiment, workers, investment, politics',
+    keywords: 'survey, experiment, social class, workers, investment, politics',
     image: '/logo.png',
   },
 
