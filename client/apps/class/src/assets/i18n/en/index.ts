@@ -29,6 +29,13 @@ export const enTranslations = {
     es: 'Spanish',
   },
 
+  seo: {
+    title: "What's your Social Class?",
+    description: 'A quick survey to understand your place in society / experiment by codeserk.es',
+    keywords: 'social class, experiment, workers, investment, politics',
+    image: '/class/logo.png',
+  },
+
   welcome: {
     views: '{{ total }} participants ({{ completed }}% completed).',
     title: "What's Your Social Class?",

@@ -2,7 +2,7 @@
 import { QuestionnaireView } from '../components/Questionnaire/Questionnaire'
 import Welcome from '../components/Welcome.astro'
 import Layout from '../layouts/Layout.astro'
-import { changeLanguage } from '../util/astro-i18n'
+import { changeLanguage, t } from '../util/astro-i18n'
 
 export function getStaticPaths() {
   return [{ params: { language: undefined } }, { params: { language: 'en' } }, { params: { language: 'es' } }]
@@ -11,9 +11,38 @@ export function getStaticPaths() {
 const { language } = Astro.params
 
 changeLanguage(language ?? 'en')
+
+const canonical = `${import.meta.env.SITE}/${language ?? ''}`
 ---
 
 <Layout>
+  <head>
+    <link rel="canonical" href={canonical} />
+    <meta name="robots" content="index, follow" />
+
+    <title>{t('seo.title')}</title>
+    <meta name="author" content="codeserk.es" />
+    <meta name="description" content={t('seo.description')} />
+    <meta name="keywords" content={t('seo.keywords')} />
+
+    <!-- OG -->
+    <meta name="og:title" content={t('seo.title')} />
+    <meta name="og:url" content={canonical} />
+    <meta name="og:description" content={t('seo.description')} />
+    <meta name="og:image" content={`${import.meta.env.SITE}${t('seo.image')}`} />
+    <meta name="og:type" content="image/png" />
+    <meta name="og:width" content="1024" />
+    <meta name="og:height" content="1024" />
+
+    <!-- Twitter -->
+    <meta name="twitter:title" content={t('seo.title')} />
+    <meta name="twitter:description" content={t('seo.description')} />
+    <meta name="twitter:image" content={`${import.meta.env.SITE}${t('seo.image')}`} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="codeserk.es" />
+    <meta name="twitter:creator" content="@codeserk" />
+  </head>
+
   <Welcome />
   <QuestionnaireView client:only="preact" language={(language ?? 'en') as 'es' | 'en'} />
 </Layout>

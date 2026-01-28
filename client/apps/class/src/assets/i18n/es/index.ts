@@ -30,6 +30,13 @@ export const esTranslations = {
     es: 'Castellano',
   },
 
+  seo: {
+    title: '¿Cuál es tu clase social?',
+    description: 'Una encuesta rápida para entender tu lugar en la sociedad / un experimento de codeserk.es',
+    keywords: 'clase social, experimento, trabajadores, inversión, política',
+    image: '/class/logo-es.png',
+  },
+
   welcome: {
     views: '{{ total }} participantes ({{ completed }}% completado).',
     title: '¿Cuál es tu clase social?',

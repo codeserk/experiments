@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://experiments.codeserk.es/class/sitemap.xml
