@@ -5,7 +5,6 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
   prefetch: true,
   site: 'https://experiments.codeserk.es',
-  base: '/',
   vite: {
     server: {
       hmr: {
