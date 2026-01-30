@@ -1,0 +1,26 @@
+---
+import '../assets/styles/base.css'
+
+const { language } = Astro.params
+---
+
+<!doctype html>
+<html lang={language ?? 'en'}>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="sitemap" href="https://experiments.codeserk.es/sitemap.xml" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700;900&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="author" href="https://www.codeserk.es" />
+    <meta name="msapplication-TileColor" content="#fdca55" />
+    <meta name="theme-color" content="#fdca55" />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

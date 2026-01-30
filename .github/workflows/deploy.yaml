@@ -29,7 +29,13 @@ jobs:
         run: |
           rm -rf dist
           mkdir dist
-          echo "Hello" > dist/index.html
+
+      - name: Build index
+        working-directory: ./client/apps/index/
+        run: |
+          npm ci
+          npm run build
+          cp -rf dist ../../../dist
 
       - name: Create .env file
         working-directory: ./client/apps/class/
