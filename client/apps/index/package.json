@@ -13,9 +13,10 @@
     "preview": "astro preview",
     "astro": "astro"
   },
-"dependencies": {
+  "dependencies": {
     "astro": "^5.16.8",
-    "i18next": "^25.7.4"
+    "i18next": "^25.7.4",
+    "react-i18next": "^16.5.4"
   },
   "devDependencies": {
     "@types/jest": "^30.0.0",
