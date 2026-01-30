@@ -30,7 +30,7 @@ jobs:
         run: |
           npm ci
           npm run build
-          rm -rf dist
+          rm -rf ../../../dist
           cp -rf dist ../../../dist/
 
       - name: Create .env file
