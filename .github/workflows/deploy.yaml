@@ -35,7 +35,7 @@ jobs:
         run: |
           npm ci
           npm run build
-          cp -rf dist ../../../dist
+          cp -rf dist/* ../../../dist/
           ls -R ../../../dist/
 
       - name: Create .env file
@@ -50,7 +50,7 @@ jobs:
         run: |
           npm ci
           npm run build
-          cp -rf dist ../../../dist/class
+          cp -rf dist/* ../../../dist/class/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
