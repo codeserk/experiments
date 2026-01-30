@@ -36,7 +36,7 @@ jobs:
           npm ci
           npm run build
           cp -rf dist ../../../dist
-          ls -R .../../../dist/
+          ls -R ../../../dist/
 
       - name: Create .env file
         working-directory: ./client/apps/class/
